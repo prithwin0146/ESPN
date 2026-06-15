@@ -3,8 +3,8 @@
   overflow: hidden;
   background:
     radial-gradient(circle at 80% 0%, rgba(232, 199, 125, 0.16), transparent 26rem),
-    linear-gradient(180deg, #fff7ed 0%, #1a1410 0.01%, #120d0a 100%);
-  color: #fff;
+    linear-gradient(180deg, var(--color-bg) 0%, var(--color-surface) 0.01%, var(--color-surface-soft) 100%);
+  color: var(--color-text);
 }
 
 .footer__shell {
@@ -30,7 +30,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.9rem;
-  color: #fff;
+  color: var(--color-text);
   font-weight: 800;
   letter-spacing: -0.01em;
 }
@@ -41,12 +41,12 @@
   height: 3.25rem;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid var(--color-border);
   border-radius: 1rem;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.16), transparent),
-    linear-gradient(135deg, #7a0b2b, #3d0618);
-  color: #fff;
+    linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+  color: var(--color-text-inverse);
   font-family: var(--font-display);
   font-size: 0.95rem;
   box-shadow: 0 16px 44px rgba(0, 0, 0, 0.24);
@@ -54,7 +54,7 @@
 
 .footer__brand span:last-child {
   max-width: 16rem;
-  color: rgba(255, 255, 255, 0.68);
+  color: var(--color-text-muted);
   font-size: 0.82rem;
   line-height: 1.45;
 }
@@ -67,13 +67,13 @@
 }
 
 .footer a {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-text-muted);
   text-decoration: none;
   transition: color 220ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .footer a:hover {
-  color: #e8c77d;
+  color: var(--color-accent);
 }
 
 .footer__middle {
@@ -120,5 +120,11 @@
 
   .footer__contact {
     justify-content: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer * {
+    transition-duration: 0.01ms !important;
   }
 }

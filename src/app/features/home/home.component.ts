@@ -2,9 +2,6 @@ import { Component, OnInit, OnDestroy, inject, signal, PLATFORM_ID, Inject } fro
 import { isPlatformBrowser } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { DataService } from '../../core/services/data.service';
-import { SectionHeadingComponent } from '../../shared/components/section-heading/section-heading.component';
-import { StatCounterComponent } from '../../shared/components/stat-counter/stat-counter.component';
-import { TestimonialCardComponent } from '../../shared/components/testimonial-card/testimonial-card.component';
 import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
 import { Course } from '../../core/models/course.model';
 import { Testimonial } from '../../core/models/testimonial.model';
@@ -14,9 +11,6 @@ import { Testimonial } from '../../core/models/testimonial.model';
   standalone: true,
   imports: [
     RouterLink,
-    SectionHeadingComponent,
-    StatCounterComponent,
-    TestimonialCardComponent,
     ScrollRevealDirective
   ],
   templateUrl: './home.component.html',

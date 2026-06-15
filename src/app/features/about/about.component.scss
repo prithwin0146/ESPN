@@ -1,0 +1,375 @@
+@use '../../../_premium' as *;
+
+/* =====================================================
+   ABOUT COMPONENT — premium token-based redesign
+   ===================================================== */
+
+/* Per-page glass-card override so .glass-card works */
+.glass-card {
+  @include glass-card-premium;
+}
+
+/* ── MISSION ─────────────────────────────────────────── */
+
+.about-mission-section {
+  background: var(--grad-warm);
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+}
+
+.mission-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+
+  p {
+    color: var(--color-text-muted);
+    line-height: var(--lh-loose);
+    font-size: var(--fs-16);
+    strong { color: var(--color-text); }
+  }
+}
+
+.mission-box {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-primary);
+  border-radius: var(--r-xl);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-base);
+
+  &:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+
+  .mission-icon { font-size: 1.6rem; flex-shrink: 0; line-height: 1.2; }
+
+  h4 {
+    font-family: var(--font-sans);
+    font-size: var(--fs-13);
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0 0 var(--space-2);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  p {
+    margin: 0;
+    font-size: var(--fs-14);
+    color: var(--color-text-muted);
+    font-style: italic;
+    line-height: var(--lh-loose);
+  }
+}
+
+/* ── MISSION VISUAL (right col) ─────────────────────── */
+
+.mission-visual {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.founder-profile {
+  @include glass-card-premium;
+  padding: var(--space-8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  transition: var(--transition-base);
+
+  &:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); }
+
+  .founder-emoji {
+    font-size: 2.8rem;
+    width: 80px; height: 80px;
+    background: var(--color-primary-soft);
+    border: 2px solid var(--color-border-strong);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .founder-details {
+    h3 {
+      font-family: var(--font-display);
+      font-size: var(--fs-24);
+      font-weight: 700;
+      color: var(--color-text);
+      margin: 0 0 var(--space-1);
+    }
+
+    .founder-role {
+      display: block;
+      color: var(--color-primary);
+      font-size: var(--fs-13);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: var(--space-4);
+    }
+
+    p {
+      color: var(--color-text-muted);
+      font-size: var(--fs-14);
+      line-height: var(--lh-loose);
+      margin: 0 0 var(--space-4);
+    }
+  }
+
+  .founder-call-btn {
+    @include btn-primary;
+    font-size: var(--fs-14);
+    padding: var(--space-3) var(--space-6);
+    text-decoration: none;
+  }
+}
+
+.about-quote {
+  @include glass-card-premium;
+  padding: var(--space-6);
+  position: relative;
+
+  .quote-mark {
+    font-family: var(--font-display);
+    font-size: 5rem;
+    color: var(--color-primary-soft);
+    font-weight: 900;
+    line-height: 0.65;
+    display: block;
+    margin-bottom: var(--space-3);
+  }
+
+  p {
+    font-family: var(--font-display);
+    font-style: italic;
+    color: var(--color-text);
+    font-size: var(--fs-18);
+    line-height: var(--lh-loose);
+    margin: 0 0 var(--space-3);
+  }
+
+  cite {
+    display: block;
+    color: var(--color-accent-hover);
+    font-size: var(--fs-13);
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+}
+
+/* ── TIMELINE ─────────────────────────────────────────── */
+
+.timeline-section {
+  background: var(--color-surface);
+}
+
+.timeline {
+  position: relative;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: var(--space-6) 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background: linear-gradient(to bottom, var(--color-primary), var(--color-accent));
+    opacity: 0.35;
+
+    @media (max-width: 700px) { left: 20px; }
+  }
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: calc(50% + var(--space-8));
+  margin-bottom: var(--space-6);
+  position: relative;
+
+  &.right {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: calc(50% + var(--space-8));
+  }
+
+  @media (max-width: 700px) {
+    padding-right: 0 !important;
+    padding-left: 3.5rem !important;
+    justify-content: flex-start !important;
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: var(--space-6);
+  transform: translateX(-50%);
+  width: 16px; height: 16px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  border: 3px solid var(--color-surface);
+  box-shadow: 0 0 0 4px var(--color-primary-soft), var(--shadow-sm);
+  z-index: 1;
+
+  @media (max-width: 700px) { left: 20px; }
+}
+
+.timeline-content {
+  @include glass-card-premium;
+  padding: var(--space-5) var(--space-6);
+  max-width: 340px;
+  width: 100%;
+  transition: var(--transition-base);
+
+  &:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); }
+
+  .timeline-year {
+    display: inline-block;
+    background: var(--grad-brand);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--fs-20);
+    margin-bottom: var(--space-2);
+    line-height: 1;
+  }
+
+  h3 {
+    font-size: var(--fs-16);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 0 var(--space-2);
+  }
+
+  p {
+    color: var(--color-text-muted);
+    font-size: var(--fs-14);
+    line-height: var(--lh-loose);
+    margin: 0;
+  }
+}
+
+/* ── VALUES ───────────────────────────────────────────── */
+
+.values-section {
+  background: var(--grad-warm);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+
+  @media (max-width: 900px) { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 500px) { grid-template-columns: 1fr; }
+}
+
+.value-card {
+  @include glass-card-premium;
+  padding: var(--space-8);
+  text-align: center;
+  transition: var(--transition-base);
+
+  &:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); }
+
+  .value-icon {
+    font-size: 2rem;
+    width: 64px; height: 64px;
+    background: var(--color-primary-soft);
+    border: 1px solid color-mix(in srgb, var(--color-primary) 18%, transparent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-4);
+  }
+
+  h3 {
+    font-size: var(--fs-18);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 0 var(--space-2);
+  }
+
+  p {
+    color: var(--color-text-muted);
+    font-size: var(--fs-14);
+    line-height: var(--lh-loose);
+    margin: 0;
+  }
+}
+
+/* ── CTA ─────────────────────────────────────────────── */
+
+.about-cta-section {
+  background: var(--color-surface);
+}
+
+.about-cta-card {
+  @include glass-card-premium;
+  padding: var(--space-12) var(--space-8);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at top center, var(--color-primary-soft), transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  > * { position: relative; z-index: 1; }
+
+  h2 {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 0 var(--space-3);
+    line-height: var(--lh-tight);
+  }
+
+  p {
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-8);
+    font-size: var(--fs-16);
+    line-height: var(--lh-loose);
+  }
+
+  .about-cta-actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Btn standalone usage on about page */
+.btn-primary { @include btn-primary; }
+.btn-outline  { @include btn-outline; }

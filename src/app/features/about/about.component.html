@@ -1,0 +1,145 @@
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="page-header-glow"></div>
+  <div class="container">
+    <div class="page-header-content">
+      <span class="page-badge">Our Story</span>
+      <h1 class="page-title">About <span class="gradient-text">ESPN</span></h1>
+      <p class="page-subtitle">
+        17+ years of transforming ordinary learners into confident communicators across South India.
+      </p>
+      <nav class="breadcrumb">
+        <a routerLink="/">Home</a>
+        <span>›</span>
+        <span>About Us</span>
+      </nav>
+    </div>
+  </div>
+  <div class="page-wave">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- MISSION SECTION -->
+<section class="section-padding about-mission-section">
+  <div class="container">
+    <div class="mission-grid">
+      <div class="mission-text" appScrollReveal>
+        <app-section-heading
+          badge="Who We Are"
+          title='The ESPN <span class="highlight">Story</span>'
+          align="left">
+        </app-section-heading>
+        <p>
+          <strong>ESPN (English Speaking Presentation Network)</strong> was founded in 2009 by
+          <strong>Mr. Rajendiran Prakas</strong> with a clear vision — to empower students, teachers,
+          professionals, and job seekers through effective English communication skills.
+        </p>
+        <p>
+          For more than 17 years, we have been serving various schools and colleges across the
+          states of Tamil Nadu and Kerala, helping thousands of learners improve their spoken English,
+          presentation skills, confidence, and overall personality.
+        </p>
+        <div class="mission-box glass-card">
+          <div class="mission-icon">🎯</div>
+          <div>
+            <h4>Our Mission</h4>
+            <p>
+              "To transform ordinary learners into confident communicators and successful leaders
+              through quality English language training."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mission-visual" appScrollReveal>
+        <div class="founder-profile glass-card">
+          <div class="founder-emoji">👨‍🏫</div>
+          <div class="founder-details">
+            <h3>Rajendiran Prakas</h3>
+            <span class="founder-role">Founder & Lead Trainer</span>
+            <p>
+              A visionary educator with 17+ years of experience transforming hesitant speakers
+              into confident communicators.
+            </p>
+            <a href="tel:8778656159" class="founder-call-btn">
+              📞 +91 8778656159
+            </a>
+          </div>
+        </div>
+        <div class="about-quote glass-card">
+          <span class="quote-mark">"</span>
+          <p>
+            Language is not just about words; it is about confidence, opportunities, and success.
+          </p>
+          <cite>— Rajendiran Prakas</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MILESTONES TIMELINE -->
+<section class="section-padding timeline-section">
+  <div class="container">
+    <app-section-heading
+      badge="Our Journey"
+      title='17 Years of <span class="highlight">Milestones</span>'
+      subtitle="From a single classroom dream to a multi-state English training institution."
+      align="center">
+    </app-section-heading>
+
+    <div class="timeline">
+      @for (milestone of milestones; track milestone.year; let i = $index) {
+        <div class="timeline-item" [class.right]="i % 2 !== 0" appScrollReveal>
+          <div class="timeline-content glass-card">
+            <span class="timeline-year">{{ milestone.year }}</span>
+            <h3>{{ milestone.title }}</h3>
+            <p>{{ milestone.desc }}</p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+      }
+      <div class="timeline-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES SECTION -->
+<section class="section-padding values-section">
+  <div class="container">
+    <app-section-heading
+      badge="What We Stand For"
+      title='Our Core <span class="highlight">Values</span>'
+      align="center">
+    </app-section-heading>
+
+    <div class="values-grid">
+      @for (val of values; track val.title; let i = $index) {
+        <div class="value-card glass-card" appScrollReveal [style.animation-delay]="(i * 0.1) + 's'">
+          <div class="value-icon">{{ val.icon }}</div>
+          <h3>{{ val.title }}</h3>
+          <p>{{ val.desc }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="about-cta-section section-padding">
+  <div class="container">
+    <div class="about-cta-card glass-card" appScrollReveal>
+      <h2>Ready to Start Your <span class="gradient-text">English Journey?</span></h2>
+      <p>Join ESPN today and speak with confidence in just weeks.</p>
+      <div class="about-cta-actions">
+        <a href="https://wa.me/918778656159" target="_blank" class="btn-primary" id="about-cta-whatsapp">
+          💬 WhatsApp Us
+        </a>
+        <a routerLink="/courses" class="btn-outline" id="about-cta-courses">View Courses →</a>
+      </div>
+    </div>
+  </div>
+</section>

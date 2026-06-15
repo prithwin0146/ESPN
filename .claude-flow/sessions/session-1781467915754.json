@@ -1,0 +1,14 @@
+{
+  "id": "session-1781467915754",
+  "startedAt": "2026-06-14T20:11:55.754Z",
+  "cwd": "/Users/prithwin/ESPN",
+  "context": {},
+  "metrics": {
+    "edits": 10,
+    "commands": 0,
+    "tasks": 0,
+    "errors": 0
+  },
+  "endedAt": "2026-06-15T05:37:37.330Z",
+  "duration": 33941583
+}

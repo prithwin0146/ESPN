@@ -1,0 +1,746 @@
+Node.js version v25.8.1 detected.
+Odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/previous-releases/.
+❯ Building...
+✔ Building...
+Initial chunk files | Names             | Raw size
+main.js             | main              | 46.29 kB | 
+styles.css          | styles            |  7.73 kB | 
+
+                    | Initial total     | 54.02 kB
+
+Lazy chunk files    | Names             | Raw size
+chunk-VH3UHS5J.js   | home-component    | 79.41 kB | 
+chunk-F5ETRJIM.js   | contact-component | 36.49 kB | 
+chunk-ERGFYEJX.js   | about-component   | 34.30 kB | 
+chunk-VUJXQJTR.js   | courses-component | 20.94 kB | 
+chunk-BYWO7UXW.js   | -                 |  9.00 kB | 
+chunk-RL3JAHK4.js   | -                 |  7.62 kB | 
+chunk-HAPPDNPZ.js   | -                 |  2.76 kB | 
+
+Application bundle generation complete. [1.025 seconds] - 2026-06-14T09:59:30.772Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names  | Raw size
+styles.css          | styles | 12.47 kB | 
+
+Application bundle generation complete. [0.082 seconds] - 2026-06-14T10:14:11.373Z
+
+Stylesheet update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.340 seconds] - 2026-06-14T10:15:40.413Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mcompound selectors may no longer be extended.
+Consider `@extend .btn-premium-outline, :hover` instead.
+See https://sass-lang.com/d/extend-compound for details.
+
+    ╷
+109 │     @extend .btn-premium-outline:hover;
+    │             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/shared/components/navbar/navbar.component.scss 109:13  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names             | Raw size
+main.js             | main              | 36.81 kB | 
+styles.css          | styles            | 12.47 kB | 
+
+                    | Initial total     | 49.29 kB
+
+Lazy chunk files    | Names             | Raw size
+chunk-57MAH5DS.js   | home-component    | 79.53 kB | 
+chunk-F5ETRJIM.js   | contact-component | 36.49 kB | 
+chunk-ERGFYEJX.js   | about-component   | 34.30 kB | 
+chunk-VUJXQJTR.js   | courses-component | 20.94 kB | 
+chunk-BYWO7UXW.js   | -                 |  9.00 kB | 
+chunk-RL3JAHK4.js   | -                 |  7.62 kB | 
+chunk-HAPPDNPZ.js   | -                 |  2.76 kB | 
+
+Application bundle generation complete. [0.184 seconds] - 2026-06-14T10:17:46.221Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.240 seconds] - 2026-06-14T10:21:05.811Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mThe target selector was not found.
+Use "@extend .glass-card-premium !optional" to avoid this error.
+    ╷
+269 │   @extend .glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 269:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.166 seconds] - 2026-06-14T10:24:20.983Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mThe target selector was not found.
+Use "@extend .glass-card-premium !optional" to avoid this error.
+    ╷
+269 │   @extend .glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 269:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mThe target selector was not found.
+Use "@extend .glass-card-premium !optional" to avoid this error.
+  ╷
+2 │   @extend .glass-card-premium;
+  │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+  src/app/shared/components/stat-counter/stat-counter.component.scss 2:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names             | Raw size
+main.js             | main              | 34.68 kB | 
+styles.css          | styles            | 12.47 kB | 
+
+                    | Initial total     | 47.15 kB
+
+Lazy chunk files    | Names             | Raw size
+chunk-RO5KNV6T.js   | home-component    | 54.77 kB | 
+chunk-F5ETRJIM.js   | contact-component | 36.49 kB | 
+chunk-ERGFYEJX.js   | about-component   | 34.30 kB | 
+chunk-VUJXQJTR.js   | courses-component | 20.94 kB | 
+chunk-BYWO7UXW.js   | -                 |  9.00 kB | 
+chunk-RL3JAHK4.js   | -                 |  7.62 kB | 
+chunk-HAPPDNPZ.js   | -                 |  2.76 kB | 
+
+Application bundle generation complete. [0.131 seconds] - 2026-06-14T10:27:14.195Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 26.98 kB | 
+
+Application bundle generation complete. [0.110 seconds] - 2026-06-14T10:27:52.675Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 27.00 kB | 
+
+Application bundle generation complete. [0.166 seconds] - 2026-06-14T11:31:38.737Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.156 seconds] - 2026-06-14T11:32:27.882Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mcompound selectors may no longer be extended.
+Consider `@extend .btn-premium-outline, :hover` instead.
+See https://sass-lang.com/d/extend-compound for details.
+
+    ╷
+109 │     @extend .btn-premium-outline:hover;
+    │             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/shared/components/navbar/navbar.component.scss 109:13  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.299 seconds] - 2026-06-14T12:59:46.869Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mcompound selectors may no longer be extended.
+Consider `@extend .btn-premium-outline, :hover` instead.
+See https://sass-lang.com/d/extend-compound for details.
+
+    ╷
+109 │     @extend .btn-premium-outline:hover;
+    │             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/shared/components/navbar/navbar.component.scss 109:13  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.137 seconds] - 2026-06-14T13:01:41.796Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mcompound selectors may no longer be extended.
+Consider `@extend .btn-premium-outline, :hover` instead.
+See https://sass-lang.com/d/extend-compound for details.
+
+    ╷
+109 │     @extend .btn-premium-outline:hover;
+    │             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/shared/components/navbar/navbar.component.scss 109:13  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names             |  Raw size
+main.js             | main              |  27.00 kB | 
+styles.css          | styles            |  12.47 kB | 
+
+                    | Initial total     |  39.48 kB
+
+Lazy chunk files    | Names             |  Raw size
+chunk-YM47MLF4.js   | home-component    | 128.65 kB | 
+chunk-F5ETRJIM.js   | contact-component |  36.49 kB | 
+chunk-ERGFYEJX.js   | about-component   |  34.30 kB | 
+chunk-VUJXQJTR.js   | courses-component |  20.94 kB | 
+chunk-BYWO7UXW.js   | -                 |   9.00 kB | 
+chunk-RL3JAHK4.js   | -                 |   7.62 kB | 
+chunk-HAPPDNPZ.js   | -                 |   2.76 kB | 
+
+Application bundle generation complete. [0.692 seconds] - 2026-06-14T13:03:02.960Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names          |  Raw size
+main.js             | main           |  27.00 kB | 
+
+Lazy chunk files    | Names          |  Raw size
+chunk-7OSWWKB2.js   | home-component | 129.63 kB | 
+
+Application bundle generation complete. [0.300 seconds] - 2026-06-14T13:04:25.141Z
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names          |  Raw size
+main.js             | main           |  46.96 kB | 
+
+Lazy chunk files    | Names          |  Raw size
+chunk-3TR4TJ43.js   | home-component | 144.35 kB | 
+
+Application bundle generation complete. [0.506 seconds] - 2026-06-14T13:30:44.033Z
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.338 seconds] - 2026-06-14T19:37:01.774Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+109 │   @include btn-premium-outline;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/shared/components/navbar/navbar.component.scss 109:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+   ╷
+10 │   @include glass-card-premium;
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  src/app/shared/components/stat-counter/stat-counter.component.scss 10:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.095 seconds] - 2026-06-14T19:39:49.798Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+109 │   @include btn-premium-outline;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/shared/components/navbar/navbar.component.scss 109:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+   ╷
+10 │   @include glass-card-premium;
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  src/app/shared/components/stat-counter/stat-counter.component.scss 10:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.072 seconds] - 2026-06-14T19:44:41.170Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+109 │   @include btn-premium-outline;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/shared/components/navbar/navbar.component.scss 109:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+   ╷
+10 │   @include glass-card-premium;
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  src/app/shared/components/stat-counter/stat-counter.component.scss 10:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.106 seconds] - 2026-06-14T19:59:47.445Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+109 │   @include btn-premium-outline;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/shared/components/navbar/navbar.component.scss 109:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+   ╷
+10 │   @include glass-card-premium;
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  src/app/shared/components/stat-counter/stat-counter.component.scss 10:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.339 seconds] - 2026-06-14T20:08:02.842Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+109 │   @include btn-premium-outline;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/shared/components/navbar/navbar.component.scss 109:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.356 seconds] - 2026-06-14T20:18:14.672Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.255 seconds] - 2026-06-14T20:19:53.164Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+   ╷
+10 │   @include glass-card-premium;
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  src/app/shared/components/stat-counter/stat-counter.component.scss 10:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.274 seconds] - 2026-06-14T20:20:33.428Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.275 seconds] - 2026-06-14T20:21:58.439Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG2008: Could not find stylesheet file './testimonial-card.component.scss'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/shared/components/testimonial-card/testimonial-card.component.ts:41:14:
+[37m      41 │   styleUrls: [[32m'./testimonial-card.component.scss'[37m]
+         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names             | Raw size
+main.js             | main              | 42.83 kB | 
+styles.css          | styles            | 27.46 kB | 
+
+                    | Initial total     | 70.29 kB
+
+Lazy chunk files    | Names             | Raw size
+chunk-5LGMI5RG.js   | home-component    | 67.63 kB | 
+chunk-F5ETRJIM.js   | contact-component | 36.49 kB | 
+chunk-OR4NFJSS.js   | about-component   | 34.30 kB | 
+chunk-EQME7W2A.js   | courses-component | 20.94 kB | 
+chunk-BYWO7UXW.js   | -                 |  9.00 kB | 
+chunk-BRXLBWQF.js   | -                 |  8.93 kB | 
+chunk-HAPPDNPZ.js   | -                 |  2.76 kB | 
+
+Application bundle generation complete. [0.292 seconds] - 2026-06-14T20:26:31.642Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.184 seconds] - 2026-06-14T20:27:55.877Z
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.221 seconds] - 2026-06-14T20:30:06.005Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCan't find stylesheet to import.
+  ╷
+1 │ @use '../../../_premium' as *;
+  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+  src/app/shared/components/footer/footer.component.scss 1:1  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names             | Raw size
+main.js             | main              | 48.89 kB | 
+styles.css          | styles            | 27.46 kB | 
+
+                    | Initial total     | 76.35 kB
+
+Lazy chunk files    | Names             | Raw size
+chunk-5LGMI5RG.js   | home-component    | 67.63 kB | 
+chunk-F5ETRJIM.js   | contact-component | 36.49 kB | 
+chunk-OR4NFJSS.js   | about-component   | 34.30 kB | 
+chunk-EQME7W2A.js   | courses-component | 20.94 kB | 
+chunk-BYWO7UXW.js   | -                 |  9.00 kB | 
+chunk-BRXLBWQF.js   | -                 |  8.93 kB | 
+chunk-HAPPDNPZ.js   | -                 |  2.76 kB | 
+
+Application bundle generation complete. [0.272 seconds] - 2026-06-14T20:32:52.559Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.660 seconds] - 2026-06-15T06:14:13.581Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.286 seconds] - 2026-06-15T06:28:08.625Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.352 seconds] - 2026-06-15T11:40:00.673Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.461 seconds] - 2026-06-15T11:40:20.675Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.499 seconds] - 2026-06-15T11:41:15.380Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.136 seconds] - 2026-06-15T11:50:42.928Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.077 seconds] - 2026-06-15T11:50:54.865Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.111 seconds] - 2026-06-15T11:53:10.949Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUndefined mixin.
+    ╷
+270 │   @include glass-card-premium;
+    │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src/app/features/home/home.component.scss 270:3  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names             |  Raw size
+main.js             | main              |  57.23 kB | 
+styles.css          | styles            |  29.05 kB | 
+
+                    | Initial total     |  86.29 kB
+
+Lazy chunk files    | Names             |  Raw size
+chunk-6TZH3NTA.js   | home-component    | 213.29 kB | 
+chunk-F5ETRJIM.js   | contact-component |  36.49 kB | 
+chunk-OR4NFJSS.js   | about-component   |  34.30 kB | 
+chunk-EQME7W2A.js   | courses-component |  20.94 kB | 
+chunk-BYWO7UXW.js   | -                 |   9.00 kB | 
+chunk-BRXLBWQF.js   | -                 |   8.93 kB | 
+chunk-HAPPDNPZ.js   | -                 |   2.76 kB | 
+
+Application bundle generation complete. [0.696 seconds] - 2026-06-15T11:53:27.154Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.501 seconds] - 2026-06-15T11:54:01.453Z
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names           | Raw size
+main.js             | main            | 57.23 kB | 
+
+Lazy chunk files    | Names           | Raw size
+chunk-SOMFZSJ6.js   | about-component | 55.16 kB | 
+
+Application bundle generation complete. [0.254 seconds] - 2026-06-15T11:54:22.785Z
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names             | Raw size
+main.js             | main              | 57.23 kB | 
+
+Lazy chunk files    | Names             | Raw size
+chunk-H2SFHQLV.js   | courses-component | 32.64 kB | 
+
+Application bundle generation complete. [0.284 seconds] - 2026-06-15T11:54:48.509Z
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names             | Raw size
+main.js             | main              | 57.23 kB | 
+
+Lazy chunk files    | Names             | Raw size
+chunk-VH5KNWT5.js   | contact-component | 58.96 kB | 
+
+Application bundle generation complete. [0.351 seconds] - 2026-06-15T11:55:19.135Z
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names             | Raw size
+main.js             | main              | 57.23 kB | 
+
+Lazy chunk files    | Names             | Raw size
+chunk-36FSNKAV.js   | contact-component | 58.92 kB | 
+chunk-M47HKPMZ.js   | about-component   | 55.13 kB | 
+chunk-3IPY7IFJ.js   | courses-component | 32.60 kB | 
+
+Application bundle generation complete. [0.367 seconds] - 2026-06-15T11:55:42.300Z
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.388 seconds] - 2026-06-15T11:56:51.619Z
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mexpected "{".
+    ╷
+963 │   position: relative;
+    │                     ^
+    ╵
+  src/app/features/home/home.component.scss 963:21  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names             |  Raw size
+main.js             | main              |  57.23 kB | 
+styles.css          | styles            |  29.05 kB | 
+
+                    | Initial total     |  86.29 kB
+
+Lazy chunk files    | Names             |  Raw size
+chunk-2IGQ6DCK.js   | home-component    | 137.68 kB | 
+chunk-36FSNKAV.js   | contact-component |  58.92 kB | 
+chunk-M47HKPMZ.js   | about-component   |  55.13 kB | 
+chunk-3IPY7IFJ.js   | courses-component |  32.60 kB | 
+chunk-BYWO7UXW.js   | -                 |   9.00 kB | 
+chunk-BRXLBWQF.js   | -                 |   8.93 kB | 
+chunk-HAPPDNPZ.js   | -                 |   2.76 kB | 
+
+Application bundle generation complete. [0.366 seconds] - 2026-06-15T11:57:33.577Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.552 seconds] - 2026-06-15T11:57:34.595Z
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names  | Raw size
+styles.css          | styles | 29.07 kB | 
+
+Application bundle generation complete. [0.398 seconds] - 2026-06-15T12:55:56.415Z
+
+Stylesheet update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names  | Raw size
+styles.css          | styles | 29.36 kB | 
+
+Application bundle generation complete. [0.115 seconds] - 2026-06-15T12:56:34.096Z
+
+Stylesheet update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names  | Raw size
+styles.css          | styles | 29.46 kB | 
+
+Application bundle generation complete. [0.084 seconds] - 2026-06-15T12:56:58.885Z
+
+Stylesheet update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names  | Raw size
+styles.css          | styles | 29.46 kB | 
+
+Application bundle generation complete. [0.098 seconds] - 2026-06-15T12:57:13.337Z
+
+Stylesheet update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names  | Raw size
+styles.css          | styles | 32.49 kB | 
+
+Application bundle generation complete. [0.104 seconds] - 2026-06-15T12:57:45.932Z
+
+Stylesheet update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names          | Raw size
+main.js             | main           | 57.23 kB | 
+
+Lazy chunk files    | Names          | Raw size
+chunk-BQ3QEK3E.js   | home-component | 29.03 kB | 
+
+Application bundle generation complete. [0.639 seconds] - 2026-06-15T12:59:48.225Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.015 seconds] - 2026-06-15T13:01:06.403Z
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.096 seconds] - 2026-06-15T13:02:40.738Z
+

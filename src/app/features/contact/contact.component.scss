@@ -1,0 +1,225 @@
+@use '../../../_premium' as *;
+
+/* =====================================================
+   CONTACT COMPONENT — premium token-based redesign
+   ===================================================== */
+
+.glass-card { @include glass-card-premium; }
+
+/* ── LAYOUT ─────────────────────────────────────────── */
+
+.contact-section {
+  background: var(--grad-warm);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: var(--space-16);
+  align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+}
+
+/* ── LEFT: INFO ─────────────────────────────────────── */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.info-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.02em;
+}
+
+.info-sub {
+  color: var(--color-text-muted);
+  line-height: var(--lh-loose);
+  font-size: var(--fs-16);
+  margin: 0;
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.info-card {
+  @include glass-card-premium;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  transition: var(--transition-base);
+
+  &:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+  .info-icon {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 2px;
+  }
+
+  h4 {
+    font-size: var(--fs-13);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 0 var(--space-1);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  a, p {
+    display: block;
+    font-size: var(--fs-14);
+    color: var(--color-text-muted);
+    margin: 0;
+    line-height: var(--lh-normal);
+  }
+
+  a {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+}
+
+.whatsapp-direct-btn {
+  @include btn-whatsapp;
+  width: 100%;
+  justify-content: center;
+  font-size: var(--fs-15);
+  padding: var(--space-4) var(--space-6);
+}
+
+/* ── RIGHT: FORM ─────────────────────────────────────── */
+
+.contact-form-wrapper {
+  min-width: 0;
+}
+
+.contact-form {
+  @include glass-card-premium;
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+
+  .form-title {
+    font-family: var(--font-display);
+    font-size: var(--fs-24);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+
+  label {
+    font-size: var(--fs-14);
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  input, select, textarea {
+    @include input-base;
+    font-size: var(--fs-15);
+  }
+
+  select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right var(--space-4) center;
+    background-size: 16px;
+    padding-right: var(--space-10);
+    appearance: none;
+    cursor: pointer;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .field-error {
+    font-size: var(--fs-12);
+    color: var(--color-danger);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    &::before { content: '⚠ '; }
+  }
+}
+
+.submit-btn {
+  @include btn-primary;
+  width: 100%;
+  justify-content: center;
+  font-size: var(--fs-16);
+  padding: var(--space-4) var(--space-6);
+  margin-top: var(--space-2);
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+/* ── SUCCESS STATE ───────────────────────────────────── */
+
+.success-message {
+  @include glass-card-premium;
+  padding: var(--space-12) var(--space-8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+
+  .success-icon { font-size: 3.5rem; line-height: 1; }
+
+  h3 {
+    font-family: var(--font-display);
+    font-size: var(--fs-28);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0;
+  }
+
+  p {
+    color: var(--color-text-muted);
+    font-size: var(--fs-16);
+    line-height: var(--lh-loose);
+    max-width: 40ch;
+    margin: 0;
+  }
+
+  button {
+    @include btn-primary;
+    font-size: var(--fs-16);
+    padding: var(--space-3) var(--space-8);
+  }
+}
+
+/* Btn standalone */
+.btn-primary { @include btn-primary; }
+.btn-outline  { @include btn-outline; }

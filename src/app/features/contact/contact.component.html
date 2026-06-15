@@ -1,0 +1,153 @@
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="page-header-glow"></div>
+  <div class="container">
+    <div class="page-header-content">
+      <span class="page-badge">Get In Touch</span>
+      <h1 class="page-title">Contact <span class="gradient-text">ESPN</span></h1>
+      <p class="page-subtitle">
+        Ready to speak with confidence? Reach out and we'll guide you to the right program.
+      </p>
+      <nav class="breadcrumb">
+        <a routerLink="/">Home</a>
+        <span>›</span>
+        <span>Contact</span>
+      </nav>
+    </div>
+  </div>
+  <div class="page-wave">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section section-padding">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- LEFT: Info Cards -->
+      <div class="contact-info" appScrollReveal>
+        <h2 class="info-heading">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="info-sub">
+          Have questions about our courses? Call us, WhatsApp us, or fill out the form — we respond within hours.
+        </p>
+
+        <div class="info-cards">
+          <div class="info-card glass-card">
+            <span class="info-icon">📞</span>
+            <div>
+              <h4>Phone / WhatsApp</h4>
+              <a href="tel:8778656159">+91 8778656159</a>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <span class="info-icon">🕐</span>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Monday – Saturday<br>8:00 AM – 8:00 PM</p>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <span class="info-icon">🌍</span>
+            <div>
+              <h4>Serving Regions</h4>
+              <p>Tamil Nadu & Kerala<br>Online — Pan India</p>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <span class="info-icon">📅</span>
+            <div>
+              <h4>Established</h4>
+              <p>2009 · 17+ Years<br>of Excellence</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/918778656159?text=Hi%20ESPN!%20I%20want%20to%20know%20more%20about%20your%20courses."
+           target="_blank" class="whatsapp-direct-btn" id="contact-whatsapp-direct">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.098.538 4.072 1.485 5.793L0 24l6.39-1.456A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.367l-.358-.214-3.795.865.934-3.71-.234-.38A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/>
+          </svg>
+          Chat Directly on WhatsApp
+        </a>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="contact-form-wrapper" appScrollReveal>
+        @if (submitted()) {
+          <div class="success-message glass-card">
+            <div class="success-icon">🎉</div>
+            <h3>Enquiry Sent!</h3>
+            <p>Thank you for reaching out. We've opened WhatsApp for you. Our trainer will respond shortly!</p>
+            <button class="btn-primary" (click)="submitted.set(false)" id="contact-send-another">Send Another</button>
+          </div>
+        } @else {
+          <form class="contact-form glass-card" [formGroup]="contactForm" (ngSubmit)="onSubmit()" id="contact-form">
+            <h3 class="form-title">Send an <span class="gradient-text">Enquiry</span></h3>
+
+            <div class="form-group">
+              <label for="contact-name">Full Name *</label>
+              <input id="contact-name" type="text" formControlName="name" placeholder="Your full name" />
+              @if (hasError('name', 'required')) {
+                <span class="field-error">Name is required.</span>
+              }
+              @if (hasError('name', 'minlength')) {
+                <span class="field-error">Name must be at least 2 characters.</span>
+              }
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">Phone Number *</label>
+              <input id="contact-phone" type="tel" formControlName="phone" placeholder="10-digit mobile number" />
+              @if (hasError('phone', 'required')) {
+                <span class="field-error">Phone number is required.</span>
+              }
+              @if (hasError('phone', 'pattern')) {
+                <span class="field-error">Enter a valid 10-digit Indian mobile number.</span>
+              }
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email (Optional)</label>
+              <input id="contact-email" type="email" formControlName="email" placeholder="your@email.com" />
+              @if (hasError('email', 'email')) {
+                <span class="field-error">Enter a valid email address.</span>
+              }
+            </div>
+
+            <div class="form-group">
+              <label for="contact-course">Course Interested In *</label>
+              <select id="contact-course" formControlName="course">
+                <option value="">Select a course...</option>
+                @for (c of courses; track c) {
+                  <option [value]="c">{{ c }}</option>
+                }
+              </select>
+              @if (hasError('course', 'required')) {
+                <span class="field-error">Please select a course.</span>
+              }
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message (Optional)</label>
+              <textarea id="contact-message" formControlName="message" rows="3"
+                        placeholder="Tell us about your current English level or any specific goals..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary submit-btn"
+                    [disabled]="isSubmitting()" id="contact-submit-btn">
+              @if (isSubmitting()) {
+                <span>Sending...</span>
+              } @else {
+                <span>💬 Send via WhatsApp</span>
+              }
+            </button>
+          </form>
+        }
+      </div>
+    </div>
+  </div>
+</section>

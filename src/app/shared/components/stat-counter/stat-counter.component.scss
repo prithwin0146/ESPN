@@ -1,0 +1,82 @@
+@use '../../../../_premium' as *;
+
+:host { display: block; height: 100%; }
+
+.stat {
+  @include glass-card-premium;
+  position: relative;
+  overflow: hidden;
+  padding: var(--space-8) var(--space-6);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  cursor: default;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+      color-mix(in srgb, var(--color-primary) 6%, transparent) 0%,
+      transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+.stat__icon {
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--r-xl);
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: var(--space-2);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--color-primary) 18%, transparent);
+}
+
+.stat__value {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-1);
+  line-height: 1;
+}
+
+.stat__count {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.stat__suffix {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 700;
+  background: var(--grad-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.stat__label {
+  color: var(--color-text-muted);
+  font-size: var(--fs-14);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-wider);
+  margin: 0;
+}

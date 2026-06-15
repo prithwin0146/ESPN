@@ -1,0 +1,43 @@
+Node.js version v25.8.1 detected.
+Odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/previous-releases/.
+❯ Building...
+✔ Building...
+Initial chunk files | Names             |  Raw size
+main.js             | main              |  46.29 kB | 
+styles.css          | styles            |   7.09 kB | 
+
+                    | Initial total     |  53.38 kB
+
+Lazy chunk files    | Names             |  Raw size
+chunk-QDEDLRLK.js   | home-component    | 102.20 kB | 
+chunk-F5ETRJIM.js   | contact-component |  36.49 kB | 
+chunk-ERGFYEJX.js   | about-component   |  34.30 kB | 
+chunk-VUJXQJTR.js   | courses-component |  20.94 kB | 
+chunk-BYWO7UXW.js   | -                 |   9.00 kB | 
+chunk-RL3JAHK4.js   | -                 |   7.62 kB | 
+chunk-HAPPDNPZ.js   | -                 |   2.76 kB | 
+
+Application bundle generation complete. [1.198 seconds] - 2026-06-14T09:40:49.649Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names  | Raw size
+styles.css          | styles |  7.73 kB | 
+
+Application bundle generation complete. [0.065 seconds] - 2026-06-14T09:57:08.866Z
+
+Stylesheet update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names          | Raw size
+main.js             | main           | 46.29 kB | 
+
+Lazy chunk files    | Names          | Raw size
+chunk-VH3UHS5J.js   | home-component | 79.41 kB | 
+
+Application bundle generation complete. [0.384 seconds] - 2026-06-14T09:58:51.862Z
+
+Component update sent to client(s).

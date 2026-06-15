@@ -1,0 +1,89 @@
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="page-header-glow"></div>
+  <div class="container">
+    <div class="page-header-content">
+      <span class="page-badge">Our Programs</span>
+      <h1 class="page-title">Our <span class="gradient-text">Courses</span></h1>
+      <p class="page-subtitle">
+        Comprehensive English communication programs for every level — from beginner to professional.
+      </p>
+      <nav class="breadcrumb">
+        <a routerLink="/">Home</a>
+        <span>›</span>
+        <span>Courses</span>
+      </nav>
+    </div>
+  </div>
+  <div class="page-wave">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- COURSES GRID -->
+<section class="courses-main-section section-padding">
+  <div class="container">
+    <app-section-heading
+      badge="All Programs"
+      title='Choose Your Path to <span class="highlight">Fluency</span>'
+      subtitle="Each course is crafted by Rajendiran Prakas with 17+ years of English training expertise."
+      align="center">
+    </app-section-heading>
+
+    <div class="courses-full-grid">
+      @for (course of courses; track course.id; let i = $index) {
+        <div class="course-full-card glass-card" appScrollReveal
+             [style.--accent]="course.color"
+             [style.animation-delay]="(i * 0.08) + 's'">
+          <div class="card-top-bar"></div>
+          <div class="card-body">
+            <div class="card-icon-row">
+              <span class="big-icon">{{ course.icon }}</span>
+              <div>
+                <span class="course-tag" [style.background]="course.color + '22'" [style.color]="course.color">
+                  {{ course.level }}
+                </span>
+                <span class="course-duration-badge">⏱ {{ course.duration }}</span>
+              </div>
+            </div>
+            <h2 class="card-title">{{ course.title }}</h2>
+            <p class="card-desc">{{ course.description }}</p>
+            <ul class="card-features">
+              @for (f of course.features; track f) {
+                <li>
+                  <span class="feat-check" [style.color]="course.color">✓</span>
+                  {{ f }}
+                </li>
+              }
+            </ul>
+            <a href="https://wa.me/918778656159?text=Hi%20ESPN!%20I%20want%20to%20enroll%20in%20{{ course.title }}%20course."
+               target="_blank" class="card-enroll-btn"
+               [style.background]="'linear-gradient(135deg,' + course.color + ', ' + course.color + 'aa)'"
+               [id]="'enroll-' + course.id">
+              Enroll in This Course →
+            </a>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ENROLL CTA -->
+<section class="courses-cta-section section-padding">
+  <div class="container">
+    <div class="courses-cta-box glass-card" appScrollReveal>
+      <div class="cta-left">
+        <h2>Not Sure Which Course to Pick?</h2>
+        <p>Talk to our trainer — we'll help you find the perfect English program for your goals.</p>
+      </div>
+      <div class="cta-right">
+        <a href="https://wa.me/918778656159?text=Hi%20ESPN!%20I%20need%20guidance%20on%20which%20English%20course%20to%20join." target="_blank"
+           class="btn-primary" id="courses-whatsapp-cta">💬 Get Free Guidance</a>
+        <a href="tel:8778656159" class="btn-outline" id="courses-call-cta">📞 Call Now</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,473 @@
+<!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+<section class="hero premium" id="home">
+  <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+  <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+  <div class="hero__blob hero__blob--3" aria-hidden="true"></div>
+
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <span class="hero__badge">
+        <span class="hero__badge-dot" aria-hidden="true"></span>
+        Est. 2009 · 17+ Years of Excellence
+      </span>
+
+      <h1 class="hero__title">
+        Speak English with
+        <span class="gradient-text">Confidence.</span><br>
+        Lead with
+        <span class="gradient-text-gold">Excellence.</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        Transform your communication skills with ESPN's proven spoken English training.
+        Trusted by 10,000+ students across Tamil Nadu & Kerala.
+      </p>
+
+      <div class="hero__actions">
+        <a href="https://wa.me/918778656159?text=Hi%20ESPN!%20I%20want%20to%20enroll%20in%20your%20spoken%20English%20course."
+           target="_blank" rel="noopener" class="btn btn-primary" id="hero-enroll-btn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+          Start Learning Today
+        </a>
+        <button type="button" class="btn btn-outline" (click)="scrollToSection('courses')" id="hero-courses-btn">
+          View Courses
+        </button>
+      </div>
+
+      <div class="hero__trust">
+        <div class="hero__avatars" aria-hidden="true">
+          <span class="hero__avatar hero__avatar--1">P</span>
+          <span class="hero__avatar hero__avatar--2">A</span>
+          <span class="hero__avatar hero__avatar--3">D</span>
+          <span class="hero__avatar hero__avatar--4">K</span>
+        </div>
+        <p class="hero__trust-text">
+          Join <strong>10,000+</strong> confident English speakers
+        </p>
+      </div>
+    </div>
+
+    <div class="hero__visual" appScrollReveal>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__card">
+        <svg class="hero__card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
+          <path d="M19 10v1a7 7 0 0 1-14 0v-1"/>
+          <line x1="12" y1="18" x2="12" y2="22"/>
+          <line x1="8" y1="22" x2="16" y2="22"/>
+        </svg>
+        <span>Live Interactive Sessions</span>
+      </div>
+
+      <div class="hero__badge-float hero__badge-float--top">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+        98% Success Rate
+      </div>
+
+      <div class="hero__badge-float hero__badge-float--bottom">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+        10,000+ Learners
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS SECTION
+     ============================================================ -->
+<section class="stats section-padding" id="stats">
+  <div class="container">
+    <div class="stats__grid">
+      @for (stat of stats; track stat.id) {
+        <app-stat-counter
+          [value]="stat.value"
+          [suffix]="stat.suffix"
+          [label]="stat.label"
+          [icon]="stat.icon">
+        </app-stat-counter>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT / MISSION SECTION
+     ============================================================ -->
+<section class="mission section-padding" id="about">
+  <div class="container">
+    <div class="mission__grid">
+      <div class="mission__visual" appScrollReveal>
+        <div class="mission__card mission__card--main card-elevated">
+          <div class="mission__icon-circle" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="6"/>
+              <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+            </svg>
+          </div>
+          <h3 class="mission__title">17+ Years of<br>Transforming Lives</h3>
+          <p class="mission__text">
+            Since 2009, ESPN has been the trusted name in spoken English coaching across South India.
+          </p>
+          <div class="mission__mini-stats">
+            <div>
+              <strong>50+</strong>
+              <span>Partner Schools</span>
+            </div>
+            <div>
+              <strong>2</strong>
+              <span>States Served</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mission__card mission__card--side card-flat">
+          <span class="mission__side-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="12" cy="12" r="1"/>
+            </svg>
+          </span>
+          <p>Focused on <strong>real-world communication</strong> skills</p>
+        </div>
+      </div>
+
+      <div class="mission__content" appScrollReveal>
+        <app-section-heading
+          badge="About ESPN"
+          title='Empowering Learners Since <span class="highlight">2009</span>'
+          subtitle="ESPN (English Speaking Presentation Network) was founded by Mr. Rajendiran Prakas with a vision to empower students, teachers, professionals, and job seekers through effective English communication."
+          align="left">
+        </app-section-heading>
+
+        <p class="mission__para">
+          For more than 17 years, ESPN has been serving various schools and colleges across
+          Tamil Nadu and Kerala, helping thousands of learners improve their spoken English,
+          presentation skills, confidence, and personality development.
+        </p>
+
+        <ul class="mission__features">
+          <li>
+            <span class="mission__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </span>
+            Interactive live sessions with practical activities
+          </li>
+          <li>
+            <span class="mission__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </span>
+            Trusted by schools & colleges across South India
+          </li>
+          <li>
+            <span class="mission__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </span>
+            Personalized guidance from experienced trainers
+          </li>
+          <li>
+            <span class="mission__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </span>
+            Special focus on interviews & workplace communication
+          </li>
+        </ul>
+
+        <a routerLink="/about" class="btn btn-primary" id="about-learn-more-btn">
+          Learn More About Us
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY JOIN SECTION
+     ============================================================ -->
+<section class="why-join section-padding" id="why-join">
+  <div class="container">
+    <app-section-heading
+      badge="Why Choose ESPN"
+      title='Why Join <span class="highlight">ESPN</span> Spoken English?'
+      subtitle="We go beyond teaching grammar — we build confidence, fluency, and professional communication skills."
+      align="center">
+    </app-section-heading>
+
+    <div class="why-join__grid">
+      @for (reason of whyJoinReasons; track reason.title; let i = $index) {
+        <article class="why-card card-glass" appScrollReveal [style.animation-delay]="(i * 80) + 'ms'">
+          <span class="why-card__icon" aria-hidden="true">
+            @switch (iconFor(i)) {
+              @case ('sparkle') {
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2 14 10 22 12 14 14 12 22 10 14 2 12 10 10 12 2z"/>
+                </svg>
+              }
+              @case ('compass') {
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9"/>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                </svg>
+              }
+              @case ('mic') {
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="2" width="6" height="12" rx="3"/>
+                  <path d="M19 10v1a7 7 0 0 1-14 0v-1"/>
+                  <line x1="12" y1="18" x2="12" y2="22"/>
+                </svg>
+              }
+              @case ('rocket') {
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 13l-2 6 6-2"/>
+                  <path d="M18 13c0 4-6 7-6 7s-6-3-6-7a6 6 0 0 1 12 0z"/>
+                  <circle cx="12" cy="13" r="2"/>
+                </svg>
+              }
+              @case ('shield') {
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2 4 5v7c0 5 3.5 9 8 10 4.5-1 8-5 8-10V5l-8-3z"/>
+                  <polyline points="9 12 11 14 15 10"/>
+                </svg>
+              }
+              @case ('users') {
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              }
+            }
+          </span>
+          <h3 class="why-card__title">{{ reason.title }}</h3>
+          <p class="why-card__desc">{{ reason.description }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     COURSES SECTION
+     ============================================================ -->
+<section class="courses section-padding" id="courses">
+  <div class="container">
+    <app-section-heading
+      badge="Our Programs"
+      title='Course <span class="highlight">Highlights</span>'
+      subtitle="Choose from our comprehensive range of English communication courses tailored for every level."
+      align="center">
+    </app-section-heading>
+
+    <div class="courses__grid">
+      @for (course of courses; track course.id; let i = $index) {
+        <article class="course-card card-glass" appScrollReveal
+                 [style.--accent]="course.color"
+                 [style.animation-delay]="(i * 80) + 'ms'">
+          <span class="course-card__accent" aria-hidden="true"></span>
+          <div class="course-card__head">
+            <span class="course-card__icon" [style.color]="course.color" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </span>
+            <span class="course-card__level" [style.color]="course.color">{{ course.level }}</span>
+          </div>
+          <h3 class="course-card__title">{{ course.title }}</h3>
+          <p class="course-card__desc">{{ course.description }}</p>
+          <ul class="course-card__features">
+            @for (feature of course.features; track feature) {
+              <li>
+                <span class="course-card__dot" [style.background]="course.color" aria-hidden="true"></span>
+                {{ feature }}
+              </li>
+            }
+          </ul>
+          <div class="course-card__footer">
+            <span class="course-card__duration">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"/>
+                <polyline points="12 7 12 12 16 14"/>
+              </svg>
+              {{ course.duration }}
+            </span>
+            <a href="https://wa.me/918778656159" target="_blank" rel="noopener" class="course-card__cta"
+               [style.background]="'linear-gradient(135deg,' + course.color + ', ' + course.color + 'cc)'"
+               [id]="'home-enroll-' + course.id">
+              Enroll
+            </a>
+          </div>
+        </article>
+      }
+    </div>
+
+    <div class="courses__all">
+      <a routerLink="/courses" class="btn btn-outline" id="view-all-courses-btn">
+        View All Courses
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M13 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LEARNING PROCESS SECTION
+     ============================================================ -->
+<section class="process section-padding" id="process">
+  <div class="container">
+    <app-section-heading
+      badge="How We Teach"
+      title='Our Learning <span class="highlight">Process</span>'
+      subtitle="A structured, empathy-driven approach that takes you from hesitation to confident communication."
+      align="center">
+    </app-section-heading>
+
+    <div class="process__grid">
+      @for (step of processSteps; track step.step; let i = $index) {
+        <article class="process-step card-flat" appScrollReveal [style.animation-delay]="(i * 120) + 'ms'">
+          <span class="process-step__num" aria-hidden="true">{{ step.step }}</span>
+          <div>
+            <h3 class="process-step__title">{{ step.title }}</h3>
+            <p class="process-step__desc">{{ step.description }}</p>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS SECTION
+     ============================================================ -->
+<section class="testimonials section-padding" id="testimonials">
+  <div class="container">
+    <app-section-heading
+      badge="Student Stories"
+      title='What Our <span class="highlight">Students</span> Say'
+      subtitle="Real transformations from real people — see how ESPN changed their lives."
+      align="center">
+    </app-section-heading>
+
+    <div class="testimonials__grid">
+      @for (t of visibleTestimonials; track t.id) {
+        <app-testimonial-card [testimonial]="t"></app-testimonial-card>
+      }
+    </div>
+
+    @if (totalPages > 1) {
+      <div class="testimonials__controls">
+        <button type="button" class="testimonials__nav" (click)="prevPage()" id="testimonial-prev-btn" aria-label="Previous testimonials">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+        </button>
+        <div class="testimonials__dots" role="tablist" aria-label="Testimonial pages">
+          @for (page of pageArray; track page) {
+            <button type="button" class="testimonials__dot" [class.is-active]="page === currentTestimonialPage()"
+                    (click)="setPage(page)" role="tab"
+                    [attr.aria-selected]="page === currentTestimonialPage()"
+                    [attr.aria-label]="'Page ' + (page + 1)"></button>
+          }
+        </div>
+        <button type="button" class="testimonials__nav" (click)="nextPage()" id="testimonial-next-btn" aria-label="Next testimonials">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    }
+  </div>
+</section>
+
+<!-- ============================================================
+     FOUNDER'S MESSAGE SECTION
+     ============================================================ -->
+<section class="founder section-padding" id="founder">
+  <div class="container">
+    <div class="founder__card card-elevated" appScrollReveal>
+      <svg class="founder__quote-mark" viewBox="0 0 24 24" width="48" height="48" fill="currentColor" aria-hidden="true">
+        <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+      </svg>
+      <blockquote class="founder__quote">
+        Language is not just about words; it is about confidence, opportunities, and success.
+        At ESPN, we believe every learner can become a confident English speaker with the
+        right guidance and consistent practice.
+      </blockquote>
+      <div class="founder__attribution">
+        <span class="founder__avatar" aria-hidden="true">RP</span>
+        <div class="founder__meta">
+          <strong class="founder__name">Rajendiran Prakas</strong>
+          <span class="founder__title">Founder, ESPN — English Speaking Presentation Network</span>
+          <a href="tel:8778656159" class="founder__phone">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            +91 8778656159
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA SECTION
+     ============================================================ -->
+<section class="cta" id="join">
+  <div class="cta__bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cta__content card-elevated" appScrollReveal>
+      <span class="cta__badge">
+        <span class="cta__badge-dot" aria-hidden="true"></span>
+        Limited Seats · Live Daily Batches
+      </span>
+      <h2 class="cta__title">
+        Ready to Speak with
+        <span class="gradient-text">Confidence?</span>
+      </h2>
+      <p class="cta__subtitle">
+        Join thousands of successful ESPN graduates. Your journey to confident English starts today.
+      </p>
+      <div class="cta__actions">
+        <a href="https://wa.me/918778656159?text=Hi%20ESPN!%20I%20want%20to%20enroll." target="_blank" rel="noopener"
+           class="btn btn-whatsapp btn-lg" id="cta-enroll-btn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          </svg>
+          Enroll Now — Free to Start
+        </a>
+        <a href="tel:8778656159" class="btn btn-outline btn-lg" id="cta-call-btn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          Call: 8778656159
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

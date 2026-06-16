@@ -235,9 +235,11 @@
   .nav-links {
     position: fixed;
     top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
     width: min(320px, 86vw);
+    min-height: 100vh;
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
@@ -247,11 +249,16 @@
     border-left: 1px solid var(--color-border);
     box-shadow: var(--shadow-2xl);
     transform: translateX(100%);
-    transition: transform var(--duration-slow) var(--ease-out);
+    pointer-events: none;
+    transition: transform var(--duration-slow) var(--ease-out),
+                pointer-events 0s;
     z-index: var(--z-toast);
     overflow-y: auto;
 
-    &.open { transform: translateX(0); }
+    &.open {
+      transform: translateX(0);
+      pointer-events: auto;
+    }
 
     a {
       padding: var(--space-3) var(--space-4);

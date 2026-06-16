@@ -12,9 +12,9 @@
   z-index: var(--z-sticky);
   transition: background var(--duration-base) var(--ease-out),
               box-shadow var(--duration-base) var(--ease-out);
-  background: rgba(0,0,0,0.05);
+  background: rgba(0,0,0,0.12);
   [data-theme="dark"] & {
-    background: rgba(255,255,255,0.05);
+    background: rgba(255,255,255,0.12);
   }
 
   &.scrolled {
@@ -183,7 +183,8 @@
   border-radius: var(--r-md);
   padding: 0;
   cursor: pointer;
-  z-index: 1;
+  position: relative;
+  z-index: var(--z-modal);
 
   span {
     display: block;

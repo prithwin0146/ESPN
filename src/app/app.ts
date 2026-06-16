@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 
@@ -20,4 +20,13 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 })
 export class App {
   title = 'ESPN — English Speaking Presentation Network';
+
+  constructor(private router: Router) {
+    router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        // Scroll to top on navigation end
+        window.scrollTo(0, 0);
+      }
+    });
+  }
 }

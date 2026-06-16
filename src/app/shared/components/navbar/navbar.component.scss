@@ -207,6 +207,7 @@
     span:nth-child(1) { transform: translateY(0) rotate(45deg); }
     span:nth-child(2) { opacity: 0; }
     span:nth-child(3) { transform: translateY(0) rotate(-45deg); }
+    z-index: var(--z-tooltip);
   }
 }
 
@@ -247,7 +248,7 @@
     box-shadow: var(--shadow-2xl);
     transform: translateX(100%);
     transition: transform var(--duration-slow) var(--ease-out);
-    z-index: var(--z-modal);
+    z-index: var(--z-toast);
     overflow-y: auto;
 
     &.open { transform: translateX(0); }

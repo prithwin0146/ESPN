@@ -4,7 +4,6 @@ import {
   signal,
   PLATFORM_ID,
   Inject,
-  effect,
 } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
@@ -62,24 +61,6 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
         </ul>
 
         <div class="nav-actions">
-          <button class="theme-toggle" type="button"
-                  (click)="toggleTheme()"
-                  [attr.aria-label]="theme() === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'">
-            @if (theme() === 'dark') {
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="5"/>
-                <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-              </svg>
-            } @else {
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-              </svg>
-            }
-          </button>
-
           <a href="tel:8778656159" class="btn btn-primary btn-sm nav-cta" id="nav-call-btn">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
@@ -106,22 +87,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class NavbarComponent {
   isScrolled = signal(false);
   menuOpen = signal(false);
-  theme = signal<'light' | 'dark'>('light');
 
   constructor(@Inject(PLATFORM_ID) private platformId: object) {
+    // Always use light mode - no need to check localStorage or prefers-color-scheme
     if (isPlatformBrowser(this.platformId)) {
-      const saved = localStorage.getItem('espn-theme') as 'light' | 'dark' | null;
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      this.theme.set(saved ?? (prefersDark ? 'dark' : 'light'));
-      this.applyTheme();
-
-      effect(() => {
-        const t = this.theme();
-        if (isPlatformBrowser(this.platformId)) {
-          localStorage.setItem('espn-theme', t);
-          this.applyTheme();
-        }
-      });
+      // Ensure light mode is set
+      document.documentElement.setAttribute('data-theme', 'light');
     }
   }
 
@@ -137,13 +108,4 @@ export class NavbarComponent {
 
   toggleMenu(): void { this.menuOpen.update(v => !v); }
   closeMenu(): void { this.menuOpen.set(false); }
-
-  toggleTheme(): void {
-    this.theme.update(t => t === 'dark' ? 'light' : 'dark');
-  }
-
-  private applyTheme(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-    document.documentElement.setAttribute('data-theme', this.theme());
-  }
 }

@@ -188,51 +188,6 @@
   --z-tooltip: 60;
 }
 
-/* Dark mode override */
-[data-theme="dark"] {
-  --color-bg:                #1A1410;
-  --color-surface:           #2A231B;
-  --color-surface-soft:      #221A14;
-  --color-surface-elevated:  #33291F;
-  --color-border:            rgba(255, 255, 255, 0.08);
-  --color-border-strong:     rgba(255, 255, 255, 0.16);
-  --color-overlay:           rgba(26, 20, 16, 0.8);
-
-  --color-text:              #F8F5F0;
-  --color-text-muted:        #B3A59C;
-  --color-text-subtle:       #8B7D73;
-  --color-text-inverse:      #1A1410;
-
-  --color-primary:           var(--brand-burgundy-500);
-  --color-primary-hover:     var(--brand-burgundy-400);
-  --color-primary-soft:      rgba(164, 21, 52, 0.16);
-  --color-primary-ring:      rgba(164, 21, 52, 0.4);
-  --color-accent-soft:       rgba(232, 199, 125, 0.18);
-
-  --grad-hero:  linear-gradient(180deg, #2A231B 0%, #221A14 60%, #2A231B 100%);
-  --grad-warm:  linear-gradient(135deg, #2A231B 0%, #221A14 50%, #2A231B 100%);
-
-  --shadow-xs:  0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow-sm:  0 2px 4px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.25);
-  --shadow-md:  0 6px 12px rgba(0, 0, 0, 0.45), 0 2px 4px rgba(0, 0, 0, 0.3);
-  --shadow-lg:  0 16px 32px -8px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(0, 0, 0, 0.35);
-  --shadow-xl:  0 28px 56px -12px rgba(0, 0, 0, 0.7), 0 12px 24px -8px rgba(0, 0, 0, 0.4);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --color-bg:                #1A1410;
-    --color-surface:           #2A231B;
-    --color-surface-soft:      #221A14;
-    --color-surface-elevated:  #33291F;
-    --color-border:            rgba(255, 255, 255, 0.08);
-    --color-border-strong:     rgba(255, 255, 255, 0.16);
-    --color-text:              #F8F5F0;
-    --color-text-muted:        #B3A59C;
-    --color-text-subtle:       #8B7D73;
-    --grad-hero:  linear-gradient(180deg, #2A231B 0%, #221A14 60%, #2A231B 100%);
-  }
-}
 
 /* ============================================================
    RESET

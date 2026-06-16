@@ -19,7 +19,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
   `]
 })
 export class App {
-  title = 'ESPN — English Speaking Presentation Network';
+  title = 'ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK';
 
   constructor(private router: Router) {
     router.events.subscribe(event => {

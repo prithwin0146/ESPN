@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-06-16T03:28:35.141Z",
+  "projectRoot": "C:\\Users\\keert\\ESPN",
+  "structure": {
+    "hasPackageJson": true,
+    "hasTsConfig": true,
+    "hasClaudeConfig": true,
+    "hasClaudeFlow": true
+  },
+  "scannedAt": 1781580515141
+}

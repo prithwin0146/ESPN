@@ -31,8 +31,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
             </svg>
           </span>
           <span class="logo-text">
-            <span class="logo-name">ESPN</span>
-            <span class="logo-tagline">English Speaking Presentation Network</span>
+            <span class="logo-name">ELPN</span>
+            <span class="logo-tagline">ENGLISH LANGUAGE PRESENTAION NETWORK</span>
           </span>
         </a>
 

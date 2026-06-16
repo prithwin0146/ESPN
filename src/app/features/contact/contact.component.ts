@@ -1,6 +1,10 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
+import { SeoService } from '../../core/services/seo.service';
+import { isPlatformBrowser } from '@angular/common';
+import { Inject, PLATFORM_ID, inject } from '@angular/core';
+import { signal } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -11,6 +15,7 @@ import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.dir
 })
 export class ContactComponent {
   private fb = new FormBuilder();
+  private seoService = inject(SeoService);
 
   submitted = signal(false);
   isSubmitting = signal(false);
@@ -33,6 +38,84 @@ export class ContactComponent {
     'Group Discussions',
     'Personality Development'
   ];
+
+  constructor(@Inject(PLATFORM_ID) private platformId: object) {}
+
+  ngOnInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      this.seoService.setTitle('Contact ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK');
+      this.seoService.updateMetaTags([
+        { name: 'description', content: 'Get in touch with ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK. For inquiries about our spoken English classes, call us at +91 8778656159 or fill out our contact form.' },
+        { name: 'keywords', content: 'contact ELPN, ELPN phone number, spoken English classes inquiry, English speaking classes contact, Rajendiran Prakas contact' }
+      ]);
+      this.seoService.setCanonicalURL('https://www.elpn.example.com/contact');
+      this.seoService.setOpenGraph({
+        title: 'Contact ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK',
+        description: 'Get in touch with ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK. For inquiries about our spoken English classes.',
+        image: 'https://www.elpn.example.com/assets/og-image-contact.jpg',
+        type: 'website',
+        url: 'https://www.elpn.example.com/contact',
+        siteName: 'ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK'
+      });
+      this.seoService.setTwitterCard({
+        card: 'summary_large_image',
+        title: 'Contact ELPN',
+        description: 'Get in touch with ELPN for course inquiries and enrollment.',
+        image: 'https://www.elpn.example.com/assets/twitter-image-contact.jpg',
+        site: '@ELPN_Official',
+        creator: '@RajendiranPrakas'
+      });
+
+      // Structured data for LocalBusiness (contact information)
+      this.seoService.setStructuredData({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK",
+        "url": "https://www.elpn.example.com/contact",
+        "telephone": "+91-8778656159",
+        "priceRange": "$$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Education Street",
+          "addressLocality": "Tamil Nadu",
+          "postalCode": "600001",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "12.9716",
+          "longitude": "77.5946"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+91-8778656159",
+            "contactType": "Customer Service"
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "contactOption": "TollFree",
+            "areaServed": "IN"
+          }
+        ]
+      });
+    }
+  }
 
   onSubmit(): void {
     if (this.contactForm.invalid) {

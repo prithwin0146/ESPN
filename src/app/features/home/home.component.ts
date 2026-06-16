@@ -5,6 +5,7 @@ import { DataService } from '../../core/services/data.service';
 import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
 import { Course } from '../../core/models/course.model';
 import { Testimonial } from '../../core/models/testimonial.model';
+import { SeoService } from '../../core/services/seo.service';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,7 @@ import { Testimonial } from '../../core/models/testimonial.model';
 })
 export class HomeComponent implements OnInit, OnDestroy {
   private dataService = inject(DataService);
+private seoService = inject(SeoService);
 
   courses: Course[] = [];
   testimonials: Testimonial[] = [];
@@ -36,6 +38,76 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.courses = this.dataService.getCourses();
     this.testimonials = this.dataService.getTestimonials();
+
+    // Set SEO tags for home page
+    if (isPlatformBrowser(this.platformId)) {
+      this.seoService.setTitle('ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK | Spoken English Classes');
+      this.seoService.updateMetaTags([
+        { name: 'description', content: 'ELPN (ENGLISH LANGUAGE PRESENTAION NETWORK) offers the best spoken English online classes. Founded in 2009 by Rajendiran Prakas. Serving Tamil Nadu & Kerala for 17+ years. Call: +91 8778656159' },
+        { name: 'keywords', content: 'spoken english classes, spoken english online, english speaking classes, ELPN english, Rajendiran Prakas, Tamil Nadu english classes, Kerala english classes, interview preparation, public speaking' }
+      ]);
+      this.seoService.setCanonicalURL('https://www.elpn.example.com/');
+      this.seoService.setOpenGraph({
+        title: 'ELPN — Spoken English Online Classes | Tamil Nadu & Kerala',
+        description: 'Transform your English with 17+ years of proven coaching. 10,000+ students trained. Enroll today!',
+        image: 'https://www.elpn.example.com/assets/og-image-home.jpg',
+        type: 'website',
+        url: 'https://www.elpn.example.com/',
+        siteName: 'ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK'
+      });
+      this.seoService.setTwitterCard({
+        card: 'summary_large_image',
+        title: 'ELPN — Spoken English Online Classes',
+        description: 'Transform your English with 17+ years of proven coaching.',
+        image: 'https://www.elpn.example.com/assets/twitter-image-home.jpg',
+        site: '@ELPN_Official',
+        creator: '@RajendiranPrakas'
+      });
+
+      // Structured data for LocalBusiness
+      this.seoService.setStructuredData({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK",
+        "image": "https://www.elpn.example.com/assets/logo.jpg",
+        "@id": "https://www.elpn.example.com/",
+        "url": "https://www.elpn.example.com/",
+        "telephone": "+91-8778656159",
+        "priceRange": "$$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Education Street",
+          "addressLocality": "Tamil Nadu",
+          "postalCode": "600001",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "12.9716",
+          "longitude": "77.5946"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-8778656159",
+          "contactType": "Customer Service"
+        }
+      });
+    }
+
     if (isPlatformBrowser(this.platformId) && this.totalPages > 1) {
       this.startCarousel();
     }

@@ -1,0 +1,7 @@
+{
+  "workerId": "worker_optimize_1_mqfeubk4",
+  "trigger": "optimize",
+  "context": "default",
+  "priority": "high",
+  "enqueuedAt": "2026-06-15T16:11:12.777Z"
+}

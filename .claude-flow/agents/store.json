@@ -1,0 +1,83 @@
+{
+  "agents": {
+    "agent-1781538346081-51uoi7": {
+      "agentId": "agent-1781538346081-51uoi7",
+      "agentType": "researcher",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "provider": "anthropic"
+      },
+      "createdAt": "2026-06-15T15:45:46.082Z",
+      "model": "sonnet",
+      "modelRoutedBy": "default"
+    },
+    "agent-1781539360606-4kmldd": {
+      "agentId": "agent-1781539360606-4kmldd",
+      "agentType": "researcher",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "provider": "anthropic"
+      },
+      "createdAt": "2026-06-15T16:02:40.607Z",
+      "model": "sonnet",
+      "modelRoutedBy": "default"
+    },
+    "agent-1781539399323-891j85": {
+      "agentId": "agent-1781539399323-891j85",
+      "agentType": "architect",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "provider": "anthropic"
+      },
+      "createdAt": "2026-06-15T16:03:19.323Z",
+      "model": "opus",
+      "modelRoutedBy": "default"
+    },
+    "agent-1781539419607-hbajxr": {
+      "agentId": "agent-1781539419607-hbajxr",
+      "agentType": "coder",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "provider": "anthropic"
+      },
+      "createdAt": "2026-06-15T16:03:39.607Z",
+      "model": "sonnet",
+      "modelRoutedBy": "default"
+    },
+    "agent-1781539436145-0jp6i4": {
+      "agentId": "agent-1781539436145-0jp6i4",
+      "agentType": "tester",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "provider": "anthropic"
+      },
+      "createdAt": "2026-06-15T16:03:56.145Z",
+      "model": "sonnet",
+      "modelRoutedBy": "default"
+    },
+    "agent-1781539467571-g14c0h": {
+      "agentId": "agent-1781539467571-g14c0h",
+      "agentType": "reviewer",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "provider": "anthropic"
+      },
+      "createdAt": "2026-06-15T16:04:27.571Z",
+      "model": "sonnet",
+      "modelRoutedBy": "default"
+    }
+  },
+  "version": "3.0.0"
+}

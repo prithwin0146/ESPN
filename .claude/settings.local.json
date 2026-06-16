@@ -18,7 +18,27 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4200)",
       "Bash(curl -s http://localhost:4200 -o /tmp/page.html)",
       "Bash(gh auth *)",
-      "Bash(git init *)"
+      "Bash(git init *)",
+      "Bash(ng serve *)",
+      "Bash(npx ng *)",
+      "Bash(git config *)",
+      "WebSearch",
+      "WebFetch(domain:21th.dev)",
+      "Skill(claude-api)",
+      "Bash(claude mcp *)",
+      "Bash(npx ruflo@latest *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git remote *)",
+      "Bash(git fetch *)",
+      "Bash(git ls-remote *)",
+      "Bash(git checkout *)",
+      "Bash(ng build *)",
+      "Bash(git merge *)",
+      "Bash(git branch *)",
+      "Bash(npm run *)",
+      "Bash(npm test *)"
     ]
   },
   "enabledMcpjsonServers": [

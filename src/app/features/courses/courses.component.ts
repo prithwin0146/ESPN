@@ -43,7 +43,7 @@ export class CoursesComponent implements OnInit {
         description: 'Explore our comprehensive spoken English courses from beginner to advanced levels.',
         image: 'https://www.elpn.example.com/assets/twitter-image-courses.jpg',
         site: '@ELPN_Official',
-        creator: '@RajendiranPrakas'
+        creator: '@RajendiranPrakash'
       });
 
       // Structured data for Course
@@ -54,14 +54,13 @@ export class CoursesComponent implements OnInit {
         "description": "Comprehensive spoken English training program",
         "provider": {
           "@type": "Organization",
-          "name": "ESPN — English Speaking Presentation Network",
-          "url": "https://www.espn.example.com"
+          "name": "ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK",
+          "url": "https://www.elpn.example.com"
         },
         "instructor": {
           "@type": "Person",
-          "name": "Rajendiran Prakas"
+          "name": "Rajendiran Prakash"
         },
-        "duration": "P3M", // 3 months
         "courseMode": "Part-time",
         "offers": {
           "@type": "Offer",

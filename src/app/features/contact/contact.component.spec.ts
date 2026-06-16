@@ -74,22 +74,22 @@ describe('ContactComponent', () => {
     const seoLog = (seoService as any).callLog;
 
     // Check setTitle
-    expect(seoLog).toContainEqual({ method: 'setTitle', args: ['Contact ESPN — English Speaking Presentation Network'] });
+    expect(seoLog).toContainEqual({ method: 'setTitle', args: ['Contact ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK'] });
 
     // Check updateMetaTags
     expect(seoLog).toContainEqual({ method: 'updateMetaTags', args: [
-      [{ name: 'description', content: 'Get in touch with ESPN for inquiries about our spoken English courses, enrollment, or general questions. We\'re here to help you start your journey to confident communication.' },
-       { name: 'keywords', content: 'Contact ESPN, English Speaking Presentation Network, spoken English inquiries, course enrollment, Rajendiran Prakas, Tamil Nadu, Kerala, phone number, WhatsApp, email' }]
+      [{ name: 'description', content: 'Get in touch with ELPN for inquiries about our spoken English courses, enrollment, or general questions. We\'re here to help you start your journey to confident communication.' },
+       { name: 'keywords', content: 'Contact ELPN, ENGLISH LANGUAGE PRESENTAION NETWORK, spoken English inquiries, course enrollment, Rajendiran Prakash, Tamil Nadu, Kerala, phone number, WhatsApp, email' }]
     ]});
 
     // Check setCanonicalURL
-    expect(seoLog).toContainEqual({ method: 'setCanonicalURL', args: ['https://www.espn.example.com/contact'] });
+    expect(seoLog).toContainEqual({ method: 'setCanonicalURL', args: ['https://www.elpn.example.com/contact'] });
 
     // Check setOpenGraph
     expect(seoLog).toContainEqual({ method: 'setOpenGraph', args: [
       expect.objectContaining({
-        title: 'Contact ESPN — English Speaking Presentation Network',
-        description: 'Get in touch with ESPN for inquiries about our spoken English courses, enrollment, or general questions. We\'re here to help you start your journey to confident communication.',
+        title: 'Contact ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK',
+        description: 'Get in touch with ELPN for inquiries about our spoken English courses, enrollment, or general questions. We\'re here to help you start your journey to confident communication.',
         type: 'website'
       })
     ]});
@@ -97,8 +97,8 @@ describe('ContactComponent', () => {
     // Check setTwitterCard
     expect(seoLog).toContainEqual({ method: 'setTwitterCard', args: [
       expect.objectContaining({
-        title: 'Contact ESPN — English Speaking Presentation Network',
-        description: 'Get in touch with ESPN for inquiries about our spoken English courses, enrollment, or general questions. We\'re here to help you start your journey to confident communication.'
+        title: 'Contact ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK',
+        description: 'Get in touch with ELPN for inquiries about our spoken English courses, enrollment, or general questions. We\'re here to help you start your journey to confident communication.'
       })
     ]});
 

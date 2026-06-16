@@ -17,7 +17,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
       <a class="skip-link" href="#main-content">Skip to main content</a>
 
       <nav class="navbar" aria-label="Primary">
-        <a routerLink="/" class="nav-logo" aria-label="ESPN home">
+        <a routerLink="/" class="nav-logo" aria-label="ELPN home">
           <span class="logo-mark" aria-hidden="true">
             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="20" cy="20" r="20" fill="url(#logo-grad)"/>

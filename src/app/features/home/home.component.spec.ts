@@ -88,22 +88,22 @@ describe('HomeComponent', () => {
     const seoLog = (seoService as any).callLog;
 
     // Check setTitle
-    expect(seoLog).toContainEqual({ method: 'setTitle', args: ['ESPN — English Speaking Presentation Network | Spoken English Classes'] });
+    expect(seoLog).toContainEqual({ method: 'setTitle', args: ['ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK | Spoken English Classes'] });
 
     // Check updateMetaTags
     expect(seoLog).toContainEqual({ method: 'updateMetaTags', args: [
-      [{ name: 'description', content: 'ESPN (English Speaking Presentation Network) offers the best spoken English online classes. Founded in 2009 by Rajendiran Prakas. Serving Tamil Nadu & Kerala for 17+ years. Call: +91 8778656159' },
-       { name: 'keywords', content: 'spoken english classes, spoken english online, english speaking classes, ESPN english, Rajendiran Prakas, Tamil Nadu english classes, Kerala english classes, interview preparation, public speaking' },
-       { name: 'author', content: 'ESPN — English Speaking Presentation Network' }]
+      [{ name: 'description', content: 'ELPN (ENGLISH LANGUAGE PRESENTAION NETWORK) offers the best spoken English online classes. Founded in 2009 by Rajendiran Prakash. Serving Tamil Nadu & Kerala for 17+ years. Call: +91 8778656159' },
+       { name: 'keywords', content: 'spoken english classes, spoken english online, english speaking classes, ELPN english, Rajendiran Prakash, Tamil Nadu english classes, Kerala english classes, interview preparation, public speaking' },
+       { name: 'author', content: 'ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK' }]
     ]});
 
     // Check setCanonicalURL
-    expect(seoLog).toContainEqual({ method: 'setCanonicalURL', args: ['https://www.espn.example.com/'] });
+    expect(seoLog).toContainEqual({ method: 'setCanonicalURL', args: ['https://www.elpn.example.com/'] });
 
     // Check setOpenGraph
     expect(seoLog).toContainEqual({ method: 'setOpenGraph', args: [
       expect.objectContaining({
-        title: 'ESPN — Spoken English Online Classes | Tamil Nadu & Kerala',
+        title: 'ELPN — Spoken English Online Classes | Tamil Nadu & Kerala',
         description: 'Transform your English with 17+ years of proven coaching. 10,000+ students trained. Enroll today!',
         type: 'website'
       })
@@ -113,8 +113,8 @@ describe('HomeComponent', () => {
     expect(seoLog).toContainEqual({ method: 'setTwitterCard', args: [
       expect.objectContaining({
         card: 'summary_large_image',
-        title: 'ESPN — Spoken English Online Classes | Tamil Nadu & Kerala',
-        description: 'Transform your English with 17+ years of proven coaching. 10,000+ students trained. Enroll today!'
+        title: 'ELPN — Spoken English Online Classes',
+        description: 'Transform your English with 17+ years of proven coaching.'
       })
     ]});
 

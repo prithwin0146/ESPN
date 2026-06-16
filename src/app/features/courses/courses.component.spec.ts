@@ -72,22 +72,22 @@ describe('CoursesComponent', () => {
     const seoLog = (seoService as any).callLog;
 
     // Check setTitle
-    expect(seoLog).toContainEqual({ method: 'setTitle', args: ['Our Courses — ESPN — English Speaking Presentation Network'] });
+    expect(seoLog).toContainEqual({ method: 'setTitle', args: ['Our Courses — ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK'] });
 
     // Check updateMetaTags
     expect(seoLog).toContainEqual({ method: 'updateMetaTags', args: [
-      [{ name: 'description', content: 'Explore ESPN\'s premium spoken English courses designed for students, professionals, and job seekers. From interview preparation to public speaking, find the perfect program for your communication goals.' },
-       { name: 'keywords', content: 'spoken english courses, english speaking programs, interview preparation, public speaking training, business communication, soft skills development, ESPN course offerings' }]
+      [{ name: 'description', content: 'Explore our comprehensive spoken English courses at ELPN. From beginner to advanced levels, we offer customized training programs for students, professionals, and anyone looking to improve their English communication skills.' },
+       { name: 'keywords', content: 'spoken English courses, English speaking classes, beginner English course, advanced English course, business English, interview preparation, public speaking training' }]
     ]});
 
     // Check setCanonicalURL
-    expect(seoLog).toContainEqual({ method: 'setCanonicalURL', args: ['https://www.espn.example.com/courses'] });
+    expect(seoLog).toContainEqual({ method: 'setCanonicalURL', args: ['https://www.elpn.example.com/courses'] });
 
     // Check setOpenGraph
     expect(seoLog).toContainEqual({ method: 'setOpenGraph', args: [
       expect.objectContaining({
-        title: 'Our Courses — ESPN — English Speaking Presentation Network',
-        description: 'Explore ESPN\'s premium spoken English courses designed for students, professionals, and job seekers. From interview preparation to public speaking, find the perfect program for your communication goals.',
+        title: 'Our Courses — ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK',
+        description: 'Explore our comprehensive spoken English courses at ELPN. From beginner to advanced levels, we offer customized training programs.',
         type: 'website'
       })
     ]});
@@ -95,8 +95,8 @@ describe('CoursesComponent', () => {
     // Check setTwitterCard
     expect(seoLog).toContainEqual({ method: 'setTwitterCard', args: [
       expect.objectContaining({
-        title: 'Our Courses — ESPN — English Speaking Presentation Network',
-        description: 'Explore ESPN\'s premium spoken English courses designed for students, professionals, and job seekers. From interview preparation to public speaking, find the perfect program for your communication goals.'
+        title: 'Our Courses — ELPN',
+        description: 'Explore our comprehensive spoken English courses from beginner to advanced levels.'
       })
     ]});
 

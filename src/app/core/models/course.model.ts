@@ -4,7 +4,5 @@ export interface Course {
   description: string;
   icon: string;
   features: string[];
-  level: 'Beginner' | 'Intermediate' | 'Advanced' | 'All Levels';
-  duration: string;
   color: string;
 }

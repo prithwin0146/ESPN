@@ -18,8 +18,6 @@ export class DataService {
         description: 'From beginner to advanced — master everyday conversational English with confidence.',
         icon: '🗣️',
         features: ['Pronunciation Mastery', 'Daily Conversations', 'Fluency Building', 'Error Correction'],
-        level: 'All Levels',
-        duration: '3 Months',
         color: '#00D4FF'
       },
       {
@@ -28,8 +26,6 @@ export class DataService {
         description: 'Real-world conversation scenarios practiced every session for natural fluency.',
         icon: '💬',
         features: ['Situational Dialogues', 'Role Play', 'Live Practice', 'Instant Feedback'],
-        level: 'Beginner',
-        duration: '6 Weeks',
         color: '#FFB830'
       },
       {
@@ -38,8 +34,6 @@ export class DataService {
         description: 'Learn grammar the easy way — through speaking, not just rules.',
         icon: '📝',
         features: ['Core Grammar Rules', 'Contextual Learning', 'Common Mistakes', 'Practice Exercises'],
-        level: 'Beginner',
-        duration: '4 Weeks',
         color: '#7C3AED'
       },
       {
@@ -48,8 +42,6 @@ export class DataService {
         description: 'Expand your word power with topic-wise vocabulary and memory techniques.',
         icon: '📚',
         features: ['Topic-wise Words', 'Idioms & Phrases', 'Memory Tricks', 'Daily Word Practice'],
-        level: 'Intermediate',
-        duration: '6 Weeks',
         color: '#10B981'
       },
       {
@@ -58,8 +50,6 @@ export class DataService {
         description: 'Overcome stage fear and speak with authority in front of any audience.',
         icon: '🎤',
         features: ['Stage Confidence', 'Speech Structure', 'Body Language', 'Voice Modulation'],
-        level: 'Intermediate',
-        duration: '2 Months',
         color: '#F43F5E'
       },
       {
@@ -68,8 +58,6 @@ export class DataService {
         description: 'Crack any interview with the right language, confidence, and smart answers.',
         icon: '💼',
         features: ['HR Round Prep', 'Technical Comm.', 'Body Language', 'Mock Interviews'],
-        level: 'Advanced',
-        duration: '4 Weeks',
         color: '#F59E0B'
       },
       {
@@ -78,8 +66,6 @@ export class DataService {
         description: 'Excel in GDs with structured speaking, listening, and leadership skills.',
         icon: '👥',
         features: ['GD Techniques', 'Assertive Speaking', 'Listening Skills', 'Leadership Language'],
-        level: 'Intermediate',
-        duration: '3 Weeks',
         color: '#06B6D4'
       },
       {
@@ -88,8 +74,6 @@ export class DataService {
         description: 'Transform your overall personality — confidence, etiquette, and leadership.',
         icon: '⭐',
         features: ['Self-Confidence', 'Professional Etiquette', 'Emotional Intelligence', 'Leadership Traits'],
-        level: 'All Levels',
-        duration: '2 Months',
         color: '#8B5CF6'
       }
     ];
@@ -101,7 +85,7 @@ export class DataService {
         id: 't1',
         name: 'Priya Kumari',
         role: 'Software Engineer',
-        review: 'ESPN transformed my English completely. I used to freeze in meetings — now I lead them with confidence. Rajendiran Sir\'s method is truly unique!',
+        review: 'ELPN transformed my English completely. I used to freeze in meetings — now I lead them with confidence. Rajendiran Sir\'s method is truly unique!',
         rating: 5,
         avatar: '👩‍💻'
       },
@@ -109,7 +93,7 @@ export class DataService {
         id: 't2',
         name: 'Arun Murugan',
         role: 'MBA Student',
-        review: 'Cleared my campus placements thanks to ESPN\'s interview prep. The mock interview sessions were incredibly realistic and helpful.',
+        review: 'Cleared my campus placements thanks to ELPN\'s interview prep. The mock interview sessions were incredibly realistic and helpful.',
         rating: 5,
         avatar: '👨‍🎓'
       },
@@ -117,7 +101,7 @@ export class DataService {
         id: 't3',
         name: 'Deepa Nair',
         role: 'Teacher',
-        review: 'As a teacher, I needed to improve my classroom communication. ESPN helped me speak with more clarity and authority. Highly recommend!',
+        review: 'As a teacher, I needed to improve my classroom communication. ELPN helped me speak with more clarity and authority. Highly recommend!',
         rating: 5,
         avatar: '👩‍🏫'
       },
@@ -125,7 +109,7 @@ export class DataService {
         id: 't4',
         name: 'Karthik Selvam',
         role: 'BPO Professional',
-        review: 'My accent and pronunciation improved dramatically in just 2 months. My client call scores went up by 40%. ESPN is worth every rupee!',
+        review: 'My accent and pronunciation improved dramatically in just 2 months. My client call scores went up by 40%. ELPN is worth every rupee!',
         rating: 5,
         avatar: '👨‍💼'
       },
@@ -133,7 +117,7 @@ export class DataService {
         id: 't5',
         name: 'Ananya Krishnan',
         role: 'College Student',
-        review: 'The group discussion sessions at ESPN are amazing. I won our college GD competition after just 3 weeks of training here.',
+        review: 'The group discussion sessions at ELPN are amazing. I won our college GD competition after just 3 weeks of training here.',
         rating: 5,
         avatar: '👩‍🎓'
       },
@@ -141,7 +125,7 @@ export class DataService {
         id: 't6',
         name: 'Ramesh Pillai',
         role: 'Job Seeker',
-        review: 'Got placed in my dream company after ESPN\'s interview preparation program. The trainers are patient, supportive, and extremely skilled.',
+        review: 'Got placed in my dream company after ELPN\'s interview preparation program. The trainers are patient, supportive, and extremely skilled.',
         rating: 5,
         avatar: '👨‍💻'
       },
@@ -149,7 +133,7 @@ export class DataService {
         id: 't7',
         name: 'Subha Chandran',
         role: 'Homemaker',
-        review: 'I always dreamed of speaking English fluently. ESPN made it possible for me at 35! The evening batch timings were very convenient.',
+        review: 'I always dreamed of speaking English fluently. ELPN made it possible for me at 35! The evening batch timings were very convenient.',
         rating: 5,
         avatar: '👩'
       },
@@ -157,7 +141,7 @@ export class DataService {
         id: 't8',
         name: 'Vijay Menon',
         role: 'Sales Manager',
-        review: 'My client presentations became so much more impactful after ESPN\'s public speaking training. Revenue in my team increased by 25%!',
+        review: 'My client presentations became so much more impactful after ELPN\'s public speaking training. Revenue in my team increased by 25%!',
         rating: 5,
         avatar: '👨‍💼'
       }

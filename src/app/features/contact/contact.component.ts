@@ -46,7 +46,7 @@ export class ContactComponent {
       this.seoService.setTitle('Contact ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK');
       this.seoService.updateMetaTags([
         { name: 'description', content: 'Get in touch with ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK. For inquiries about our spoken English classes, call us at +91 8778656159 or fill out our contact form.' },
-        { name: 'keywords', content: 'contact ELPN, ELPN phone number, spoken English classes inquiry, English speaking classes contact, Rajendiran Prakas contact' }
+        { name: 'keywords', content: 'contact ELPN, ELPN phone number, spoken English classes inquiry, English speaking classes contact, Rajendiran Prakash contact' }
       ]);
       this.seoService.setCanonicalURL('https://www.elpn.example.com/contact');
       this.seoService.setOpenGraph({
@@ -63,7 +63,7 @@ export class ContactComponent {
         description: 'Get in touch with ELPN for course inquiries and enrollment.',
         image: 'https://www.elpn.example.com/assets/twitter-image-contact.jpg',
         site: '@ELPN_Official',
-        creator: '@RajendiranPrakas'
+        creator: '@RajendiranPrakash'
       });
 
       // Structured data for LocalBusiness (contact information)
@@ -124,7 +124,7 @@ export class ContactComponent {
     }
 
     const v = this.contactForm.value;
-    const msg = `Hi ESPN! 👋%0A%0AName: ${v.name}%0APhone: ${v.phone}%0AEmail: ${v.email || 'N/A'}%0ACourse: ${v.course}%0AMessage: ${v.message || 'I want to enroll!'}`;
+    const msg = `Hi ELPN! 👋%0A%0AName: ${v.name}%0APhone: ${v.phone}%0AEmail: ${v.email || 'N/A'}%0ACourse: ${v.course}%0AMessage: ${v.message || 'I want to enroll!'}`;
     window.open(`https://wa.me/918778656159?text=${msg}`, '_blank');
     this.submitted.set(true);
     this.contactForm.reset();

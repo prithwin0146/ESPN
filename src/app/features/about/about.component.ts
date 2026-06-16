@@ -15,7 +15,7 @@ import { Inject, PLATFORM_ID } from '@angular/core';
 })
 export class AboutComponent {
   milestones = [
-    { year: '2009', title: 'ELPN Founded', desc: 'Mr. Rajendiran Prakas established ELPN in Tamil Nadu with a mission to empower communicators.' },
+    { year: '2009', title: 'ELPN Founded', desc: 'Mr. Rajendiran Prakash established ELPN in Tamil Nadu with a mission to empower communicators.' },
     { year: '2012', title: 'First 1000 Students', desc: 'Reached the milestone of training 1000+ students across schools and colleges.' },
     { year: '2015', title: 'Kerala Expansion', desc: 'ELPN expanded its presence to Kerala, serving students across two South Indian states.' },
     { year: '2018', title: '5000+ Students Trained', desc: 'Celebrated training 5000+ students with a consistent 98% success rate.' },
@@ -38,13 +38,13 @@ export class AboutComponent {
     if (isPlatformBrowser(this.platformId)) {
       this.seoService.setTitle('About ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK');
       this.seoService.updateMetaTags([
-        { name: 'description', content: 'Learn about ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK. Founded in 2009 by Rajendiran Prakas, we have been providing quality spoken English classes for 17+ years.' },
-        { name: 'keywords', content: 'about ESPN, ESPN history, spoken English institute, Rajendiran Prakas, English speaking classes Tamil Nadu, English speaking classes Kerala' }
+        { name: 'description', content: 'Learn about ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK. Founded in 2009 by Rajendiran Prakash, we have been providing quality spoken English classes for 17+ years.' },
+        { name: 'keywords', content: 'about ELPN, ELPN history, spoken English institute, Rajendiran Prakash, English speaking classes Tamil Nadu, English speaking classes Kerala' }
       ]);
       this.seoService.setCanonicalURL('https://www.elpn.example.com/about');
       this.seoService.setOpenGraph({
         title: 'About ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK',
-        description: 'Learn about ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK. Founded in 2009 by Rajendiran Prakas, we have been providing quality spoken English classes for 17+ years.',
+        description: 'Learn about ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK. Founded in 2009 by Rajendiran Prakash, we have been providing quality spoken English classes for 17+ years.',
         image: 'https://www.elpn.example.com/assets/og-image-about.jpg',
         type: 'website',
         url: 'https://www.elpn.example.com/about',
@@ -56,7 +56,7 @@ export class AboutComponent {
         description: 'Learn about our history, mission, and values.',
         image: 'https://www.elpn.example.com/assets/twitter-image-about.jpg',
         site: '@ELPN_Official',
-        creator: '@RajendiranPrakas'
+        creator: '@RajendiranPrakash'
       });
 
       // Structured data for EducationalOrganization
@@ -69,7 +69,7 @@ export class AboutComponent {
         "foundingDate": "2009",
         "founder": {
           "@type": "Person",
-          "name": "Rajendiran Prakas"
+          "name": "Rajendiran Prakash"
         },
         "address": {
           "@type": "PostalAddress",

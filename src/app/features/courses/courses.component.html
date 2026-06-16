@@ -6,7 +6,7 @@
       <span class="page-badge">Our Programs</span>
       <h1 class="page-title">Our <span class="gradient-text">Courses</span></h1>
       <p class="page-subtitle">
-        Comprehensive English communication programs for every level — from beginner to professional.
+        Comprehensive English communication programs for all learners.
       </p>
       <nav class="breadcrumb">
         <a routerLink="/">Home</a>
@@ -28,7 +28,7 @@
     <app-section-heading
       badge="All Programs"
       title='Choose Your Path to <span class="highlight">Fluency</span>'
-      subtitle="Each course is crafted by Rajendiran Prakas with 17+ years of English training expertise."
+      subtitle="Each course is crafted by Rajendiran Prakash with 17+ years of English training expertise."
       align="center">
     </app-section-heading>
 
@@ -42,11 +42,7 @@
             <div class="card-icon-row">
               <span class="big-icon">{{ course.icon }}</span>
               <div>
-                <span class="course-tag" [style.background]="course.color + '22'" [style.color]="course.color">
-                  {{ course.level }}
-                </span>
-                <span class="course-duration-badge">⏱ {{ course.duration }}</span>
-              </div>
+                              </div>
             </div>
             <h2 class="card-title">{{ course.title }}</h2>
             <p class="card-desc">{{ course.description }}</p>
@@ -58,7 +54,7 @@
                 </li>
               }
             </ul>
-            <a href="https://wa.me/918778656159?text=Hi%20ESPN!%20I%20want%20to%20enroll%20in%20{{ course.title }}%20course."
+            <a href="https://wa.me/918778656159?text=Hi%20ELPN!%20I%20want%20to%20enroll%20in%20{{ course.title }}%20course."
                target="_blank" class="card-enroll-btn"
                [style.background]="'linear-gradient(135deg,' + course.color + ', ' + course.color + 'aa)'"
                [id]="'enroll-' + course.id">
@@ -80,7 +76,7 @@
         <p>Talk to our trainer — we'll help you find the perfect English program for your goals.</p>
       </div>
       <div class="cta-right">
-        <a href="https://wa.me/918778656159?text=Hi%20ESPN!%20I%20need%20guidance%20on%20which%20English%20course%20to%20join." target="_blank"
+        <a href="https://wa.me/918778656159?text=Hi%20ELPN!%20I%20need%20guidance%20on%20which%20English%20course%20to%20join." target="_blank"
            class="btn-primary" id="courses-whatsapp-cta">💬 Get Free Guidance</a>
         <a href="tel:8778656159" class="btn-outline" id="courses-call-cta">📞 Call Now</a>
       </div>

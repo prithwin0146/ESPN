@@ -76,22 +76,22 @@ describe('AboutComponent', () => {
     const seoLog = (seoService as any).callLog;
 
     // Check setTitle
-    expect(seoLog).toContainEqual({ method: 'setTitle', args: ['About ESPN — English Speaking Presentation Network'] });
+    expect(seoLog).toContainEqual({ method: 'setTitle', args: ['About ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK'] });
 
     // Check updateMetaTags
     expect(seoLog).toContainEqual({ method: 'updateMetaTags', args: [
-      [{ name: 'description', content: 'Learn about ESPN\'s 17+ year journey of excellence in spoken English training. Meet our founder, explore our milestones, and discover our core values that drive student success.' },
-       { name: 'keywords', content: 'About ESPN, English Speaking Presentation Network, Rajendiran Prakas, spoken English institute history, milestones, values, Tamil Nadu, Kerala, English training excellence' }]
+      [{ name: 'description', content: 'Learn about ELPN\'s 17+ year journey of excellence in spoken English training. Meet our founder, explore our milestones, and discover our core values that drive student success.' },
+       { name: 'keywords', content: 'About ELPN, ENGLISH LANGUAGE PRESENTAION NETWORK, Rajendiran Prakash, spoken English institute history, milestones, values, Tamil Nadu, Kerala, English training excellence' }]
     ]});
 
     // Check setCanonicalURL
-    expect(seoLog).toContainEqual({ method: 'setCanonicalURL', args: ['https://www.espn.example.com/about'] });
+    expect(seoLog).toContainEqual({ method: 'setCanonicalURL', args: ['https://www.elpn.example.com/about'] });
 
     // Check setOpenGraph
     expect(seoLog).toContainEqual({ method: 'setOpenGraph', args: [
       expect.objectContaining({
-        title: 'About ESPN — English Speaking Presentation Network',
-        description: 'Learn about ESPN\'s 17+ year journey of excellence in spoken English training. Meet our founder, explore our milestones, and discover our core values that drive student success.',
+        title: 'About ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK',
+        description: 'Learn about ELPN\'s 17+ year journey of excellence in spoken English training. Meet our founder, explore our milestones, and discover our core values that drive student success.',
         type: 'website'
       })
     ]});
@@ -99,8 +99,8 @@ describe('AboutComponent', () => {
     // Check setTwitterCard
     expect(seoLog).toContainEqual({ method: 'setTwitterCard', args: [
       expect.objectContaining({
-        title: 'About ESPN — English Speaking Presentation Network',
-        description: 'Learn about ESPN\'s 17+ year journey of excellence in spoken English training. Meet our founder, explore our milestones, and discover our core values that drive student success.'
+        title: 'About ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK',
+        description: 'Learn about ELPN\'s 17+ year journey of excellence in spoken English training. Meet our founder, explore our milestones, and discover our core values that drive student success.'
       })
     ]});
 

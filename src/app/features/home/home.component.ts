@@ -43,8 +43,8 @@ private seoService = inject(SeoService);
     if (isPlatformBrowser(this.platformId)) {
       this.seoService.setTitle('ELPN — ENGLISH LANGUAGE PRESENTAION NETWORK | Spoken English Classes');
       this.seoService.updateMetaTags([
-        { name: 'description', content: 'ELPN (ENGLISH LANGUAGE PRESENTAION NETWORK) offers the best spoken English online classes. Founded in 2009 by Rajendiran Prakas. Serving Tamil Nadu & Kerala for 17+ years. Call: +91 8778656159' },
-        { name: 'keywords', content: 'spoken english classes, spoken english online, english speaking classes, ELPN english, Rajendiran Prakas, Tamil Nadu english classes, Kerala english classes, interview preparation, public speaking' }
+        { name: 'description', content: 'ELPN (ENGLISH LANGUAGE PRESENTAION NETWORK) offers the best spoken English online classes. Founded in 2009 by Rajendiran Prakash. Serving Tamil Nadu & Kerala for 17+ years. Call: +91 8778656159' },
+        { name: 'keywords', content: 'spoken english classes, spoken english online, english speaking classes, ELPN english, Rajendiran Prakash, Tamil Nadu english classes, Kerala english classes, interview preparation, public speaking' }
       ]);
       this.seoService.setCanonicalURL('https://www.elpn.example.com/');
       this.seoService.setOpenGraph({
@@ -61,7 +61,7 @@ private seoService = inject(SeoService);
         description: 'Transform your English with 17+ years of proven coaching.',
         image: 'https://www.elpn.example.com/assets/twitter-image-home.jpg',
         site: '@ELPN_Official',
-        creator: '@RajendiranPrakas'
+        creator: '@RajendiranPrakash'
       });
 
       // Structured data for LocalBusiness

@@ -11,14 +11,13 @@
   right: 0;
   z-index: var(--z-sticky);
   transition: background var(--duration-base) var(--ease-out),
-              box-shadow var(--duration-base) var(--ease-out);
-  background: rgba(0,0,0,0.12);
-  [data-theme="dark"] & {
-    background: rgba(255,255,255,0.12);
-  }
+              box-shadow var(--duration-base) var(--ease-out),
+              backdrop-filter var(--duration-base) var(--ease-out);
+  background: var(--color-overlay);
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
 
   &.scrolled {
-    background: var(--color-overlay);
     backdrop-filter: blur(18px) saturate(160%);
     -webkit-backdrop-filter: blur(18px) saturate(160%);
     border-bottom: 1px solid var(--color-border);

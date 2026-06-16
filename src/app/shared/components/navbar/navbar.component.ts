@@ -36,7 +36,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
           </span>
         </a>
 
-        <ul class="nav-links" [class.open]="menuOpen()">
+        <ul class="nav-links" id="nav-mobile-menu" [class.open]="menuOpen()">
           <li>
             <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
                (click)="closeMenu()">Home</a>

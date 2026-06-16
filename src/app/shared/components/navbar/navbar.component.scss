@@ -207,7 +207,7 @@
     span:nth-child(1) { transform: translateY(0) rotate(45deg); }
     span:nth-child(2) { opacity: 0; }
     span:nth-child(3) { transform: translateY(0) rotate(-45deg); }
-    z-index: var(--z-tooltip);
+    z-index: var(--z-overlay);
   }
 }
 

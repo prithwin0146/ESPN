@@ -19,7 +19,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
       <nav class="navbar" aria-label="Primary">
         <a routerLink="/" class="nav-logo" aria-label="ELPN home">
           <img src="assets/elpn-logo.png" alt="ELPN — English Language Presentation Network"
-               class="nav-logo-img" width="140" height="44" loading="eager" />
+               class="nav-logo-img" width="56" height="56" loading="eager" />
         </a>
 
         <ul class="nav-links" id="nav-mobile-menu" [class.open]="menuOpen()">

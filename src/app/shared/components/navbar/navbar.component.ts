@@ -18,22 +18,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 
       <nav class="navbar" aria-label="Primary">
         <a routerLink="/" class="nav-logo" aria-label="ELPN home">
-          <span class="logo-mark" aria-hidden="true">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20" cy="20" r="20" fill="url(#logo-grad)"/>
-              <path d="M12 13h7.2c3.5 0 5.8 2 5.8 5 0 3.2-2.4 5-6 5H16v4h-4V13zm4 7h2.8c1.4 0 2.2-.7 2.2-2s-.8-2-2.2-2H16v4zm10-7h4l3.5 10 3.5-10h4l-6 14h-3l-6-14z" fill="#fff"/>
-              <defs>
-                <linearGradient id="logo-grad" x1="0" y1="0" x2="40" y2="40">
-                  <stop offset="0" stop-color="#A41534"/>
-                  <stop offset="1" stop-color="#6E0B20"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
-          <span class="logo-text">
-            <span class="logo-name">ELPN</span>
-            <span class="logo-tagline">ENGLISH LANGUAGE PRESENTAION NETWORK</span>
-          </span>
+          <img src="assets/elpn-logo.png" alt="ELPN — English Language Presentation Network"
+               class="nav-logo-img" width="140" height="44" loading="eager" />
         </a>
 
         <ul class="nav-links" id="nav-mobile-menu" [class.open]="menuOpen()">

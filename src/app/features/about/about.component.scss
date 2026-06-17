@@ -82,6 +82,24 @@
   gap: var(--space-5);
 }
 
+.founder-photo-wrap {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--color-border-strong);
+  box-shadow: var(--shadow-md);
+  flex-shrink: 0;
+}
+
+.founder-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
 .founder-profile {
   @include glass-card-premium;
   padding: var(--space-8);
@@ -93,17 +111,6 @@
   transition: var(--transition-base);
 
   &:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); }
-
-  .founder-emoji {
-    font-size: 2.8rem;
-    width: 80px; height: 80px;
-    background: var(--color-primary-soft);
-    border: 2px solid var(--color-border-strong);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
   .founder-details {
     h3 {

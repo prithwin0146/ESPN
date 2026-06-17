@@ -59,35 +59,19 @@
 .nav-logo {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-3);
-  text-decoration: none;
-  color: var(--color-text);
   flex-shrink: 0;
-
-  &:hover .logo-name { color: var(--color-primary); }
+  text-decoration: none;
 }
 
-.logo-mark {
-  display: inline-flex;
-  border-radius: var(--r-md);
-  box-shadow: var(--shadow-sm);
-}
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  display: block;
+  transition: opacity var(--duration-base) var(--ease-out);
 
-.logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-
-.logo-name {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: var(--fs-24);
-  letter-spacing: -0.01em;
-  color: var(--color-text);
-  transition: color var(--duration-base) var(--ease-out);
-}
-
-.logo-tagline {
-  font-size: var(--fs-12);
-  color: var(--color-text-muted);
-  letter-spacing: var(--letter-wide);
+  &:hover { opacity: 0.85; }
 }
 
 /* ---------- Links (desktop) ---------- */
@@ -278,5 +262,4 @@
   .nav-mobile-cta { display: block; padding-top: var(--space-4); border: 0; }
   .nav-mobile-cta .btn { width: 100%; justify-content: center; }
 
-  .logo-tagline { display: none; }
 }
